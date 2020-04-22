@@ -1,0 +1,66 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="819 354 215 138"><g data-item-type="text" data-item="Business" id="logo__item--business" class="logo__item">
+                <g class="logo__item__inner" transform="translate(819.984375 490.23567956616813) scale(1 1) rotate(0 0 0)">
+                    <text data-part-id="logo__item--business" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Montserrat" font-size="32px" fill="#44fd10" letter-spacing="0" font-weight="bold" font-style="normal" data-font-family="Montserrat" data-font-weight="bold" data-font-style="normal" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf" data-font-filename="montserrat-bold-normal">Doba Korone</text>
+                </g>
+            </g><g data-item-type="image" data-item="Image" data-logo-item="" id="logo__item--logo_0" class="logo__item">
+    <g class="logo__item__inner" transform="translate(855.6481579714555 344) scale(1.3928868601774902 1.3928868601774902) rotate(0 0 0)">
+
+<g>
+	<g>
+		<g>
+			<radialGradient id="SVGID_1_" cx="47.439" cy="39.7485" r="57.5139" gradientUnits="userSpaceOnUse">
+				<stop offset="0.103" style="stop-color:#CB2229"></stop>
+				<stop offset="0.6667" style="stop-color:#630414"></stop>
+				<stop offset="1" style="stop-color:#170000"></stop>
+			</radialGradient>
+			<filter id="logo__item--logo_0__0_Effect" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur in="SourceGraphic" stdDeviation="1" result="glow"></feGaussianBlur><feOffset in="SourceAlpha" dx="0.00" dy="0.00" result="offsetShadow"></feOffset><feGaussianBlur in="offsetShadow" stdDeviation="7" result="shadow"></feGaussianBlur><feMerge><feMergeNode in="glow"></feMergeNode><feMergeNode in="shadow"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter><path fill="#ffffff" d="M15.591,53.354c10.397-10.659,21.235-20.884,31.921-31.254     c11.541,11.364,23.045,22.756,34.572,34.127c-0.627,2.418-1.467,4.785-2.603,7.019c4.502,0.698,9.001,1.503,13.385,2.767     c-4.831-0.547-20.685-2.24-39.153-0.189c-8.003,0.922-15.965,2.381-23.699,4.652c-2.03,0.55-14.657,4.812-18.917,6.468     c3.785-2.722,7.865-5.009,12.083-6.985C19.217,65.234,16.575,59.443,15.591,53.354z M26.552,48.296     c-0.179,6.62-0.399,13.235-0.578,19.858c2.505-0.749,4.301-1.128,6.427-1.785c11.691-3.781,24.126-4.985,36.367-4.246     c0.048-4.606-0.007-9.217,0.027-13.824c-7.053-6.355-14.134-12.686-21.201-19.02C40.583,35.627,33.55,41.944,26.552,48.296z" data-part-id="logo__item--logo_0__0" data-filter-shadow="" data-filter-shadow-distance="0" data-filter-shadow-angle="45" filter="url(#logo__item--logo_0__0_Effect)" data-filter-glow="" data-filter-glow-thickness="1"></path>
+		</g>
+		<radialGradient id="SVGID_2_" cx="47.4331" cy="39.752" r="57.5084" gradientUnits="userSpaceOnUse">
+			<stop offset="0.103" style="stop-color:#CB2229"></stop>
+			<stop offset="0.6667" style="stop-color:#630414"></stop>
+			<stop offset="1" style="stop-color:#170000"></stop>
+		</radialGradient>
+		<path fill="#ffff00" d="M41.842,45.822c1.713,0.003,3.434,0.003,5.161,0c-0.021,1.703-0.027,3.406,0,5.109    c-1.72-0.004-3.447-0.004-5.167,0C41.849,49.229,41.842,47.525,41.842,45.822z" data-part-id="logo__item--logo_0__1"></path>
+		<radialGradient id="SVGID_3_" cx="47.4331" cy="39.7524" r="57.5234" gradientUnits="userSpaceOnUse">
+			<stop offset="0.103" style="stop-color:#CB2229"></stop>
+			<stop offset="0.6667" style="stop-color:#630414"></stop>
+			<stop offset="1" style="stop-color:#170000"></stop>
+		</radialGradient>
+		<path fill="#ffff00" d="M48.551,45.812c1.713,0.021,3.414,0.018,5.126,0c-0.021,1.71-0.021,3.42,0.007,5.13    c-1.714-0.018-3.42-0.021-5.133,0C48.572,49.231,48.572,47.522,48.551,45.812z" data-part-id="logo__item--logo_0__2"></path>
+		<radialGradient id="SVGID_4_" cx="47.437" cy="39.7495" r="57.5158" gradientUnits="userSpaceOnUse">
+			<stop offset="0.103" style="stop-color:#CB2229"></stop>
+			<stop offset="0.6667" style="stop-color:#630414"></stop>
+			<stop offset="1" style="stop-color:#170000"></stop>
+		</radialGradient>
+		<path fill="#ffff00" d="M41.835,52.149c1.713-0.021,3.44-0.007,5.154-0.015c0,1.721,0.014,3.441-0.014,5.162    c-1.713-0.018-3.427-0.011-5.133-0.011C41.842,55.572,41.856,53.863,41.835,52.149z" data-part-id="logo__item--logo_0__3"></path>
+		<radialGradient id="SVGID_5_" cx="47.4375" cy="39.7534" r="57.5069" gradientUnits="userSpaceOnUse">
+			<stop offset="0.103" style="stop-color:#CB2229"></stop>
+			<stop offset="0.6667" style="stop-color:#630414"></stop>
+			<stop offset="1" style="stop-color:#170000"></stop>
+		</radialGradient>
+		<path fill="#ffff00" d="M48.565,52.125c1.7,0.021,3.4,0.021,5.106,0c-0.007,1.724-0.007,3.444,0,5.168    c-1.706-0.01-3.406-0.014-5.106,0C48.565,55.569,48.565,53.846,48.565,52.125z" data-part-id="logo__item--logo_0__4"></path>
+	</g>
+	<g>
+		<radialGradient id="SVGID_6_" cx="47.9512" cy="19.772" r="44.6338" gradientUnits="userSpaceOnUse">
+			<stop offset="0" style="stop-color:#919395"></stop>
+			<stop offset="0.6727" style="stop-color:#424243"></stop>
+			<stop offset="1" style="stop-color:#272525"></stop>
+		</radialGradient>
+		<path fill="#42fd2d" d="M47.973,14.151c3.378,3.296,6.373,6.981,9.764,10.267c0.007-0.895,0.015-1.796,0.007-2.694    c2.182-0.01,4.363,0.01,6.551-0.017c0.035,3.296,0.014,6.596,0.008,9.888c4.961,5.357,9.943,10.693,14.911,16.043    c2.705,2.986,5.574,5.836,8.175,8.914c-3.221-2.689-6.241-5.625-9.379-8.412c-10.136-9.2-20.272-18.411-30.415-27.604    c-10.411,9.345-20.829,18.682-31.247,28.027c-3.076,2.667-5.987,5.54-9.166,8.079c2.429-2.846,5.168-5.419,7.721-8.154    C25.919,37.038,36.984,25.629,47.973,14.151z" data-part-id="logo__item--logo_0__5"></path>
+		<radialGradient id="SVGID_7_" cx="6.7139" cy="56.9492" r="0" gradientUnits="userSpaceOnUse">
+			<stop offset="0" style="stop-color:#919395"></stop>
+			<stop offset="0.6727" style="stop-color:#424243"></stop>
+			<stop offset="1" style="stop-color:#272525"></stop>
+		</radialGradient>
+		<path fill="url(#SVGID_7_)" d="M6.714,56.949" data-part-id="logo__item--logo_0__6"></path>
+		<radialGradient id="SVGID_8_" cx="50.5107" cy="66.5615" r="28.6259" gradientUnits="userSpaceOnUse">
+			<stop offset="0" style="stop-color:#919395"></stop>
+			<stop offset="0.6727" style="stop-color:#424243"></stop>
+			<stop offset="1" style="stop-color:#272525"></stop>
+		</radialGradient>
+		<path fill="#70ff1d" d="M28.101,74.719c16.02-4.709,32.644-7.334,49.317-7.951c-2.986,4.632-7.197,8.447-12.021,11.097    c-6.248,3.44-13.611,4.804-20.685,3.854C38.677,80.964,32.883,78.477,28.101,74.719z" data-part-id="logo__item--logo_0__7"></path>
+	</g>
+</g>
+
+    </g>
+</g></svg>

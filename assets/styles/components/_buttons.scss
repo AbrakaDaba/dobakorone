@@ -1,0 +1,33 @@
+.scroll-up-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    min-width: 30px;
+    min-height: 30px;
+    background-color: $white;
+    padding-bottom: 10px;
+    z-index: 1000;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    border-radius: 50%;
+    opacity: .7;
+    color: $color1;
+    display: none;
+    background-image: url(../../assets/icons/arrow-up.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2rem;
+    &:hover{
+        opacity: 1;
+        color: $color1;
+        text-decoration: none;
+    }
+    &.flex{
+        display: flex;
+    }
+}

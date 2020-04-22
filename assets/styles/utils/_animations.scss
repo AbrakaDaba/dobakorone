@@ -1,0 +1,26 @@
+@keyframes alertColors {
+    0%   {color: rgba(255,255,255,.25);}
+    25%  {color: $color1;}
+    50%  {color: rgba(255,255,255,.25);}
+    75%  {color: $color1;}
+    100% {color: rgba(255,255,255,.25);}
+  }
+
+  @keyframes phonePuls {
+    0%   {background-size: 3rem;}
+    25%  {background-size: 4.5rem;}
+    50%  {background-size: 2rem;}
+    75%  {background-size: 4.5rem;}
+    100% {background-size: 3rem;}
+  }
+
+  @media screen and (min-width: 1200px) {
+    @keyframes phonePuls {
+      0%   {background-size: 3rem;}
+      25%  {background-size: 3.5rem;}
+      50%  {background-size: 2.5rem;}
+      75%  {background-size: 3.5rem;}
+      100% {background-size: 3rem;}
+    }
+
+  }

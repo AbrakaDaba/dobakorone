@@ -1,0 +1,205 @@
+// COLORS
+$white: #ffffff;
+$greyish: #aaaaaa;
+$black: #000000;
+
+// $dusty-orange: #f6713f;
+// $blueberry: #343f95;
+// $dark-blue: #000e55;
+// $dark-blue-grey-two: #0b0c26;
+// $pale-grey-three: #f0f4f7;
+
+// $bg-light-blue: #edf4f4;
+// $perrywinkle: #8b94d8;
+// $black-0: rgba(0, 0, 0, 0);
+// $french-blue: #485bb8;
+// $dark-blue-grey: #141b37;
+// $dark: #151b23;
+// $gunmetal: #494d5a;
+// $dark-two: #17191c;
+// $green: #1ab330;
+// $light-grey: #ebeae6;
+// $rusty-red: #b31a1a;
+// $peacock-blue: #0064a6;
+// $green-two: #1db432;
+// $charcoal-grey: #3f434e;
+// $white-two: #e8e8e8;
+// $pale-grey: #e6eaed;
+// $iris: #675cb7;
+// $denim-blue: #3e619d;
+// $booger: #8cc63e;
+// $pale-grey-two: #f2f2f4;
+// $butterscotch: #faac38;
+// $white-three: #e2e2e2;
+// $white-four: #f3f3f3;
+// $warm-grey: #8c8c8c;
+// $light-blue-grey: #d8e4ed;
+// $dark-slate-blue: #152b5d;
+// $warm-grey-two: #717171;
+// $pinkish-grey: #cccccc;
+
+// html {
+//     font-size: 62.5%;
+// }
+
+
+// .heading-third {
+//     font-size: 3.6rem;
+//     text-align: center;
+//     color: $dark;
+//     line-height: 1;
+//     margin-bottom: 1.8rem;
+
+//     &--white {
+//         color: $white;
+//     }
+// }
+
+
+
+.b-ground {
+    background-repeat: no-repeat;
+}
+
+
+
+
+.faq {
+    margin-bottom: 1rem;
+
+    &__heading {
+        display: block;
+    }
+
+    &-full__heading {
+        display: none;
+    }
+    p{
+        margin: 1rem 0;
+    }
+}
+
+.question {
+    border-radius: .7rem;
+    background-color: rgba(220, 220, 255, 0.15);
+    .btn {
+        position: relative;
+        padding-left: 6rem;
+        font-family: Open-sans-bold;
+        font-size: 1.9rem;
+        color: $dark;
+        line-height: 3.5rem;
+        border-radius: .7rem;
+        border: 1px solid #e3ffb533;
+        box-shadow: 0px 3px 9px #00000087;
+        background: $color11;
+        color: $white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        .plus-minus {
+            position: absolute;
+            left: 1.8rem;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: $color11;
+            background-image: url(../../assets/icons/ico_minus.svg);
+            @extend .b-ground;
+
+        }
+
+        &.collapsed {
+            background: linear-gradient(90deg, transparent, #e3ffb51f, transparent);
+            color: $colorw;
+            border: solid 1px rgba(181, 184, 183, 0.4);
+
+
+            .plus-minus {
+                background-image: url(../../assets/icons/ico_plus.svg);
+                @extend .b-ground;
+            }
+
+            &:hover {
+                border: 1px solid $color1;
+            }
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.answer {
+    padding: 1.5rem 1rem 0 1rem;
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    color: $light2;
+    // p{
+    //     margin: 1rem 0;
+    // }
+}
+
+.dot{
+    text-indent: 20px;
+    background-image: url(../../assets/icons/dot.svg);
+    background-repeat: no-repeat;
+    background-position: left 1.1rem;
+    background-size: 1.2rem;
+    &--y{
+        background-image: url(../../assets/icons/dot-y.svg);
+    }
+}
+
+// @media only screen and (min-width: 1140px) {
+//     .faq {
+//         max-width: 830px;
+//         margin: 0 auto;
+//         margin-bottom: 2rem;
+
+//         &__heading {
+//             display: none;
+//         }
+
+//         &-full__heading {
+//             display: block;
+//         }
+//     }
+
+//     .faq-accordion {
+//         margin: 5rem 0;
+//     }
+// }
+@media only screen and (min-width: 992px) {
+    .answer-wrapper{
+        width:925px;
+    }
+    .faq:nth-child(even){
+        .answer-wrapper{
+           transform: translateX(-492px);
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    .answer-wrapper{
+        width:1105px;
+    }
+    .faq:nth-child(even){
+        .answer-wrapper{
+           transform: translateX(-583px);
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .question .btn{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}

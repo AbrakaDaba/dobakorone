@@ -1,0 +1,214 @@
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../../assets/fonts/Abel-Regular.eot');
+    src: url('../../assets/fonts/Abel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Abel-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Abel-Regular.woff') format('woff'),
+        url('../../assets/fonts/Abel-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/Abel-Regular.svg#Abel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-sans-bold';
+    src: url('../../assets/fonts/OpenSans-Bold.eot');
+    src: url('../../assets/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/OpenSans-Bold.woff') format('woff'),
+        url('../../assets/fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../../assets/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../../assets/fonts/BarlowCondensed-Regular.eot');
+    src: url('../../assets/fonts/BarlowCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/BarlowCondensed-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/BarlowCondensed-Regular.woff') format('woff'),
+        url('../../assets/fonts/BarlowCondensed-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/BarlowCondensed-Regular.svg#BarlowCondensed-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// @font-face {
+//     font-family: 'PT Sans Narrow';
+//     src: url('../../assets/fonts/PTSans-Narrow.eot');
+//     src: url('../../assets/fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
+//         url('../../assets/fonts/PTSans-Narrow.woff2') format('woff2'),
+//         url('../../assets/fonts/PTSans-Narrow.woff') format('woff'),
+//         url('../../assets/fonts/PTSans-Narrow.ttf') format('truetype'),
+//         url('../../assets/fonts/PTSans-Narrow.svg#PTSans-Narrow') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'Roboto-bold';
+    font-family: 'PT Sans Narrow';
+    src: url('../../assets/fonts/Roboto-Bold.eot');
+    src: url('../../assets/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Bold.woff') format('woff'),
+        url('../../assets/fonts/Roboto-Bold.ttf') format('truetype'),
+        url('../../assets/fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-sans';
+    src: url('../../assets/fonts/OpenSans-Regular.eot');
+    src: url('../../assets/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/OpenSans-Regular.woff') format('woff'),
+        url('../../assets/fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url('../../assets/fonts/Roboto-Light.eot');
+    src: url('../../assets/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Roboto-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Light.woff') format('woff'),
+        url('../../assets/fonts/Roboto-Light.ttf') format('truetype'),
+        url('../../assets/fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'Alfa-slab-one';
+    src: url('../../assets/fonts/AlfaSlabOne-Regular.eot');
+    src: url('../../assets/fonts/AlfaSlabOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/AlfaSlabOne-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/AlfaSlabOne-Regular.woff') format('woff'),
+        url('../../assets/fonts/AlfaSlabOne-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/AlfaSlabOne-Regular.svg#AlfaSlabOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+
+    src: url('../../assets/fonts/Roboto-Regular.eot');
+    src: url('../../assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Regular.woff') format('woff'),
+        url('../../assets/fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'BenchNine';
+    src: url('../../assets/fonts/BenchNine-Regular.eot');
+    src: url('../../assets/fonts/BenchNine-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/BenchNine-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/BenchNine-Regular.woff') format('woff'),
+        url('../../assets/fonts/BenchNine-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/BenchNine-Regular.svg#BenchNine-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-sans-light';
+    src: url('../../assets/fonts/OpenSans-Light.eot');
+    src: url('../../assets/fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../../assets/fonts/OpenSans-Light.woff') format('woff'),
+        url('../../assets/fonts/OpenSans-Light.ttf') format('truetype'),
+        url('../../assets/fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Codystar';
+    src: url('../../assets/fonts/Codystar.eot');
+    src: url('../../assets/fonts/Codystar.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Codystar.woff2') format('woff2'),
+        url('../../assets/fonts/Codystar.woff') format('woff'),
+        url('../../assets/fonts/Codystar.ttf') format('truetype'),
+        url('../../assets/fonts/Codystar.svg#Codystar') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'patrick-hand';
+    // src: url('../../assets/fonts/PatrickHand-Regular.ttf');
+    src: url('../../assets/fonts/PatrickHand-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.test{
+font-family: 'Abel';
+font-family: 'Open-sans';
+font-family: 'Open-sans-bold';
+font-family: 'Open-sans-light';
+font-family: 'Roboto';
+font-family: 'Roboto-bold';
+font-family: 'Roboto-light';
+font-family: 'PT Sans Narrow';
+font-family: 'Codystar';
+// font-family: 'Barlow';
+// font-family: 'Alfa-slab-one';
+// font-family: 'BenchNine';
+}
+
+.main-heading{
+    text-align: center;
+    font-family: open-sans-bold;
+    position: relative;
+    color: $colorw;
+    font-size: 4rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    // background-image: linear-gradient(  rgb(167, 5, 5) 58%, blue 59%,blue 60%, white 61%, white 100%);
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // background-clip: text;
+    // color: transparent;
+}
+
+.second-heading{
+    color: $color4;
+    font-size: 3rem;
+    font-family: "PT Sans Narrow";
+    text-align: left;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+p{
+    font-size: 2rem;
+    line-height: 1.7
+}
+
+@media screen and (max-width: 768px) {
+    p{
+        font-size: 16px;
+        line-height: 1.7;
+        font-family: Open-sans;
+    }
+}

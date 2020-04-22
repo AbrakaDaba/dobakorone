@@ -1,0 +1,89 @@
+#table-wrapper {
+  // background-image:  url("/img/COVID-19_World_Map1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -13.5rem;
+  padding-top: 8rem;
+  border-top: 1px solid $color2;
+  h2 {}
+
+  h5 {}
+
+  table {
+    font-size: 2rem;
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    tr {
+      display: flex;
+
+      th {
+        flex: 1;
+        padding: .5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(162, 168, 162);
+        border-right: 1px solid $color4;
+        padding-left: 2rem;
+
+        &:first-child {
+          color: $color3;
+          border-left: 1px solid $color4;
+
+        }
+      }
+    }
+
+    tr {
+      display: flex;
+
+      td {
+        flex: 1;
+        padding: .5rem;
+        font-size: 3rem;
+        color: white;
+        border-right: 1px solid $color4;
+        padding-left: 2rem;
+
+        &:first-child {
+          color: $color3;
+          border-left: 1px solid $color4;
+        }
+
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #table-wrapper {
+    // background-image:  url("/img/COVID-19_World_Map1.jpg");
+
+    table {
+      font-size: 1.5rem;
+
+      tr {
+
+        th {
+          padding-left: 1rem;
+
+          &:first-child {
+            color: $color3;
+            border-left: 1px solid $color4;
+
+          }
+        }
+      }
+
+      tr {
+
+        td {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}

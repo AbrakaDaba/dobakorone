@@ -1,0 +1,44 @@
+.divider {
+    position: relative;
+    font-size: 3rem;
+    color: $color1;
+    // transform: rotate(-90deg);
+}
+
+
+.style1 {
+    h5 {
+        color: $heading1;
+    }
+
+    a {
+        border-top: 1px solid $heading1;
+    }
+
+    .contacts__item__num {
+        color: $heading1;
+    }
+}
+
+.style2 {
+    .second-heading{
+        color: $color1;
+    }
+    h5 {
+        color: $heading1;
+    }
+
+    a {
+        border-top: 1px solid $heading3;
+    }
+}
+.style3 {
+
+    h5 {
+        color: $heading3;
+    }
+
+    a {
+        border-top: 1px solid $heading3;
+    }
+}

@@ -1,0 +1,354 @@
+header {
+  border-bottom: 1px solid $color2;
+  font-family: Open-sans;
+  background-color: #1f2b44;
+  background-image: url(../../assets/img/serbian-flag.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 7rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  user-select: none;
+
+  .icons-bar {
+    height: 10rem;
+    // background: linear-gradient(#616161, $dark);
+    background: linear-gradient(#ffffff00, #0a0e18);
+    overflow-x: auto;
+    border-bottom: 1px solid $color2;
+    transition: .3s height;
+
+    .container {
+      min-width: 820px;
+      // overflow: hidden;
+    }
+
+    &--top {
+      transition: .3s height;
+      background-color: #172031f7;
+       &:before {
+        // content: "";
+        position: absolute;
+        height: 100%;
+        width: calc(100% + 15px);
+// background-image: url(../../assets/img/Gear.svg);
+      background-position: left 6px, right 7px;
+      background-size: 6.5rem;
+        left: 50%;
+        z-index: -1;
+        box-shadow: 0px 5px 12px black;
+
+      }
+    }
+
+  }
+
+  .switch-locale {
+    list-style: none;
+    text-align: right;
+
+    a {
+      color: $color1;
+      transition: .3s;
+      font-size: 12px;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .icon-btn {
+
+    width: 10rem;
+    // opacity: .65;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-position: center 1rem;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: .3s background-size;
+
+    &__text {
+      position: absolute;
+      font-size: 16px;
+      bottom: 2px;
+      width: 100%;
+      text-align: center;
+      color: $dark3;
+      white-space: nowrap;
+      transition: .3s opacity;
+      text-transform: lowercase;
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      opacity: 1;
+      -webkit-filter: grayscale(0%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+
+      .icon-btn__text {
+        color: #ffffff;
+      }
+    }
+
+
+    &:nth-of-type(1) {
+      width: 6rem;
+      background-image: url("../../assets/icons/call_doctor.svg");
+    }
+
+    &:nth-of-type(2) {
+      background-image: url("../../assets/img/corona.png");
+    }
+
+    &:nth-of-type(3) {
+      background-image: url("../../assets/icons/3distance_keep.svg");
+      // width: 11rem;
+      // background-image: url(../../assets/icons/2mask_woman.svg), url(../../assets/icons/2mask_man.svg);
+      // background-position: left 6px, right 7px;
+      // background-size: 6.5rem;
+    }
+
+    &:nth-of-type(4) {
+      background-image: url("../../assets/icons/Chart.svg");
+    }
+
+    &:nth-of-type(5) {
+      background-image: url("../../assets/icons/doctor.svg");
+    }
+
+    &:nth-of-type(6) {
+      background-image: url("../../assets/icons/4no_crowd.svg");
+    }
+
+    &:nth-of-type(7) {
+      background-image: url("../../assets/icons/4heart_strong.svg");
+    }
+
+    &:nth-of-type(8) {
+      background-image: url("../../assets/icons/0home_stay.svg");
+    }
+
+    &.active_icon {
+      position: relative;
+      z-index: 2;
+      -webkit-filter: grayscale(0%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   height: 2px;
+      //   width: calc(100% + 15px);
+      //   background-color: #000;
+      //   transform: translate(-50%);
+      //   // bottom: -1px;
+      //   left: 50%;
+      //   z-index: -1;
+      //   box-shadow: 0px 5px 12px black;
+
+      // }
+
+      // &:before {
+      //   content: "";
+      //   position: absolute;
+      //   height: 100%;
+      //   width: calc(100% + 15px);
+      //   border-right: 1px solid #e2c82c;
+      //   border-left: 1px solid #e2c82c;
+      //   border-bottom: 1px solid #000;
+      //   transform: translate(-50%);
+      //   // bottom: -1px;
+      //   left: 50%;
+      //   z-index: -1;
+      //   box-shadow: 0px 5px 12px black;
+
+      // }
+
+      .icon-btn__text {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &.scroll {
+    .icons-bar {
+      height: 7rem;
+    }
+
+    .icon-btn {
+      background-size: 5rem;
+
+      &__text {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+// ICON - CONTENTS
+.icons-contents {
+  margin-top: 20rem;
+  position: relative;
+  // background: linear-gradient(to right, #282828ba, #cfcfcf21, #cfcfcf21, #282828ba);
+  border-bottom: 1px solid $color2;
+
+  z-index: 1;
+  // margin-top: -0;
+  transition: all .35s;
+  overflow: hidden;
+
+
+
+
+  &.slide-up {
+    .icon-content {
+      max-height: 0 !important;
+      transition: .35s;
+    }
+  }
+
+  &-bg:before {
+    content: "";
+    position: absolute;
+    top: 2%;
+    height: 100vw;
+    left: 2%;
+    right: 2%;
+    opacity: 0.15;
+    background-repeat: no-repeat;
+    background-size: 20vw auto;
+    background-position: right top;
+    background-image: url(../../assets/img/serbia.png);
+    // background-color: linear-gradient(to right, transparent, black, black, transparent);
+    ;
+    z-index: -1;
+  }
+  &-bg__1:before{
+    background-image: url(../../assets/img/stethoscope.png), url(../../assets/img/serbia.png);
+  }
+}
+
+.icon-content {
+  // margin-top: -100%;
+  // height: 0;
+  z-index: 1;
+  width: 100%;
+  display: none;
+  // left: -100%;
+  color: $light2;
+  // transition: max-height .35s, opacity .35s;
+  transition: opacity .35s ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 2%;
+  //   height: 100vw;
+  //   left: 2%;
+  //   right: 2%;
+  //   opacity: 0.15;
+  //   background-repeat: no-repeat;
+  //   background-size: 100px auto, 20vw auto;
+  //   background-position: left top, right top;
+  //   background-image: url(../../assets/img/stethoscope.png), url(../../assets/img/sebia.png);
+  //   // background-color: linear-gradient(to right, transparent, black, black, transparent);
+  //   ;
+  //   z-index: -1;
+  // }
+}
+
+.logo_img {
+  height: 7.5rem;
+  transition: .3s height;
+  filter: grayscale(100%) opacity(0.7);
+}
+.glow-on-hover {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff4455, #ff7300, #edb92e, #48ff00, #ff7300, #ff4455, #ff7300, #48ff00, #edb92e);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: 90%;
+  height: 90%;
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  border-radius: 50%;
+}
+
+
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+#alert-colors {
+  animation: alertColors 4s linear 2s infinite;
+}
+
+
+
+
+
+
+// COVID-19
+.protect-item {
+  margin-bottom: 3rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  header {
+    .icons-bar--top .container {
+      min-width: 0;
+    }
+
+    .icon-btn {
+      &__text {
+        bottom: 0;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  header {
+    .icons-bar--top .container {
+      min-width: 0;
+    }
+
+    .icon-btn {
+      &__text {
+        bottom: 0;
+        font-size: 13px;
+      }
+    }
+  }
+}
