@@ -5,7 +5,9 @@
     // transform: rotate(-90deg);
 }
 
-
+.text-cta{
+    color:$color1;
+}
 .style1 {
     h5 {
         color: $heading1;
@@ -25,7 +27,7 @@
         color: $color1;
     }
     h5 {
-        color: $heading1;
+        color: $color3;
     }
 
     a {

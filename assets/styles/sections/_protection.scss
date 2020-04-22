@@ -22,12 +22,13 @@ div[class^="protect-"] {
     padding: 2rem;
     border-radius: .7rem;
     background: linear-gradient(90deg, transparent, #e3ffb51f, transparent);
+    background: linear-gradient(90deg, #242839, #424653, #242839);
     color: $colorw;
     border: solid 1px rgba(181, 184, 183, 0.4);
 }
 
 .protect__heading{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
@@ -42,9 +43,9 @@ div[class^="protect-"] {
     min-width: 11rem;
     height: 11rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 10rem;
     background-position: left top;
-    margin-right: 20px;
+    margin-right: 10px;
     float: left;
     // background-color: #0b132347;
     // border: 17px solid #ffffff00;
@@ -52,7 +53,7 @@ div[class^="protect-"] {
 }
 
 .protect__why {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 2;
 }
 
@@ -86,10 +87,24 @@ div[class^="protect-"] {
     }
 
     &-6 .protect__img {
+        background-image: url(../../assets/icons/info_warning.svg);
+    }
+    &-7 .protect__img {
+        background-image: url(../../assets/icons/crowd.svg);
+    }
+    &-8 .protect__img {
+        background-image: url(../../assets/icons/1hands_wash.svg);
+    }
+    &-9 .protect__img {
+        background-image: url(../../assets/icons/mask.svg);
+    }
+    &-10 .protect__img {
+        background-image: url(../../assets/icons/1hands_wash.svg);
+    }
+    &-11 .protect__img {
         background-image: url(../../assets/icons/1hands_wash.svg);
     }
 
-    &-7 {}
 }
 
 
