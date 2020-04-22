@@ -922,16 +922,22 @@ header.scroll .icon-btn__text {
   background-color: rgba(220, 220, 255, 0.15);
 }
 
+.contacts__item__anch:hover {
+  border-top: 1px solid #3ee00d;
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
 .contacts__item__heading {
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #fff;
 }
 
 .contacts__item__num {
   font-family: open-sans-bold;
-  font-size: 2rem;
+  font-size: 2.6rem;
   color: #ff4455;
   display: inline-block;
   background-image: url(../../assets/icons/call.svg);
