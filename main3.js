@@ -1,17 +1,15 @@
 $("body").css({
     background: "#172031f7",
-    opacity: ".1"
+    opacity: "0"
 })
-$(".roto-loader img").animate({
-    width: "200px",
-    height: "200px"
-}, 5000)
+// $(".roto-loader img").animate({
+//     width: "200px",
+//     height: "200px"
+// }, 5000)
+
+
 
 window.onload = function () {
-
-
-
-
 
     (function () {
         var contentHeights = [];
@@ -407,10 +405,7 @@ window.onload = function () {
                 $(el.target).toggleClass("active");
                 checkIndex = $(checks).index(el.target);
                 var theIcon = $(`.icon-btn[data-index=${checkIndex}]`);
-                //  $(`.icon-btn[data-index=${checkIndex}]`)[0].css({border: "2ps solid red;"})
                 console.log($(theIcon).toggleClass("hide"))
-
-
             })
         }
         checkSections();
@@ -431,5 +426,4 @@ window.onload = function () {
         background: "linear-gradient(to right, #282828ba, #cfcfcf21, #cfcfcf21, #282828ba)"
     }, "slow")
 
-    // },3000);
 }
