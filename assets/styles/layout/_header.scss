@@ -45,20 +45,9 @@ header {
 
   }
 
-  .switch-locale {
-    list-style: none;
-    text-align: right;
+ 
 
-    a {
-      color: $color1;
-      transition: .3s;
-      font-size: 12px;
 
-      &:hover {
-        color: $white;
-      }
-    }
-  }
 
   .icon-btn {
 

@@ -194,15 +194,26 @@ font-family: 'Codystar';
     font-size: 3rem;
     font-family: "PT Sans Narrow";
     text-align: left;
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
     margin-top: .5rem;
     line-height: 1.5;
     letter-spacing: 2px;
 }
+.third-heading{
+    color: $color4;
+    font-size: 2.2rem;
+    font-family: "Open-sans-bold";
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 p{
     font-size: 2rem;
-    line-height: 1.7
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 768px) {

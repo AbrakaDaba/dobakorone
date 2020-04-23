@@ -16,7 +16,9 @@ body{
     font-size: 1.8rem;
     background: linear-gradient(to right, #282828ba, #cfcfcf21, #cfcfcf21, #282828ba);
 }
-
+ul, li{
+    list-style: none;
+}
 
 body *{
     margin: 0;

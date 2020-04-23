@@ -43,6 +43,74 @@
 <body class="light-layout light" id="top-position">
 
 
+  <!-- SETTINGS-MENU -->
+  <div class="settings-menu active p-5">
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language-switcher text-center mb-5">
+      <span class="third-heading">IZABERITE PISMO</span>
+      <div class="menu-wrapper mt-5">
+        <ul class="switch-locale d-flex justify-content-between w-75 mx-auto my-3">
+          <li><a href="#" data-locale="cyr" class="text-white">Ћирилица</a></li>
+          <li><a href="#" data-locale="lat" class="text-white">Latinica</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION LIST -->
+    <div class="section-list py-3">
+      <span class="d-block third-heading text-center">IZABERITE SEKCIJE KOJE ŽELITE DA VAM SE PRIKAZUJU:</span>
+      <ul class="menu">
+        <li>
+          <span class="check active" data-i18n="call">
+            Pozovi
+          </span>
+        </li>
+
+        <li>
+          <span class="check active" data-i18n="covid-19">
+            Covid-19
+          </span>
+        </li>
+
+        <li class="">
+          <span class="check active" data-i18n="protection">
+            Mere Zaštite
+          </span>
+        </li>
+
+        <li class="">
+          <span class="check active" data-i18n="stats">
+            Statistika
+          </span>
+        </li>
+
+        <li class="">
+          <span class="check active" data-i18n="doctors-say">
+            Privreda
+          </span>
+        </li>
+        <li class="">
+          <span class="check active" data-i18n="rules">
+            Propisi
+          </span>
+        </li>
+        <li class="">
+          <span class="check active" data-i18n="solidarity">
+            Solidarnost
+          </span>
+        </li>
+        <li class="">
+          <span class="check active" data-i18n="home-time">
+            Vreme u kući
+          </span>
+        </li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
   <div class="bg-layer">
     <header class="">
       <!-- TOP BAR -->
@@ -55,10 +123,7 @@
             <li><span id="alert-colors" data-i18n="alert-message-1">#SutraMožeBitiKasno</span></li>
             <li><span id="alert-colors" data-i18n="alert-message-2">#OstaniKodKuće</span></li>
           </ul>
-          <ul class="switch-locale">
-            <li><a href="#" data-locale="cyr">Ћирилица</a></li>
-            <li><a href="#" data-locale="lat">Latinica</a></li>
-          </ul>
+          <div class="settings-btn"></div>
         </div>
       </div>
 
@@ -111,7 +176,7 @@
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+38119819"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="contact-center">
                       Kontakt centar / COVID-19
                     </div>
@@ -124,7 +189,7 @@
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+38119920"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="elderly-help">
                       Pomoć starim licima
                     </div>
@@ -137,7 +202,7 @@
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648945235"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="ministry-of-health">
                       Ministаrstvо zdrаvljа
                     </div>
@@ -150,7 +215,7 @@
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381112684566"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="batut">
                       Institut zа јаvnо zdrаvljе Srbiје
                     </div>
@@ -163,7 +228,7 @@
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381600180244"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="batut">
                       Institut zа јаvnо zdrаvljе Srbiје
                     </div>
@@ -176,126 +241,146 @@
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811908"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #1</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-908</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 7-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811909"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #2</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-909</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 8-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811910"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #3</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-910</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 9-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811911"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div class="text-lg-center">
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #4</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-911</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 10-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811912"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #5</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-912</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 11-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811913"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #6</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-913</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 12-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811914"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #7</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-914</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 13-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811915"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #8</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-915</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 14-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811916"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #9</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-916</span>
                   </a>
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 6-->
+              <!-- CONTACT ITEM 15-->
               <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381648811917"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
-                    <div class="contacts__item__heading" data-i18n="epidemiologist">
-                      Dežurni epidemiolog
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
+                    <div>
+                      <div class="contacts__item__heading d-inline" data-i18n="epidemiologist">
+                        Dežurni epidemiolog
+                      </div><span> #10</span>
                     </div>
                     <span class="contacts__item__num">064/88-11-917</span>
                   </a>
@@ -309,11 +394,11 @@
             <h5 class="second-heading" data-i18n="upset">Uznemireni ste</h5>
             <div class="contacts d-flex row mb-5">
 
-              <!-- CONTACT ITEM 8-->
+              <!-- CONTACT ITEM 16-->
               <div class="col-12 col-md-6 col-lg-4 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381637298260"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="inst-young">
                       Institut za mentalno zdravlje (za mlade i roditelje dece do 18 godina)
                     </div>
@@ -322,11 +407,11 @@
                 </div>
               </div>
 
-              <!-- CONTACT ITEM 9-->
+              <!-- CONTACT ITEM 17-->
               <div class="col-12 col-md-6 col-lg-4 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381631751150"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="inst-mature">
                       Institut za mentalno zdravlje (za osobe starije od 18 godina)
                     </div>
@@ -334,12 +419,12 @@
                   </a>
                 </div>
               </div>
-              
-              <!-- CONTACT ITEM 7-->
+
+              <!-- CONTACT ITEM 18-->
               <div class="col-12 col-md-6 col-lg-4 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="tel:+381800309309"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="psyho-soc-help">
                       Psihosocijalna pomoć
                     </div>
@@ -351,14 +436,14 @@
             </div>
           </div>
 
-          <div class="contacts_group style3">
+          <div class="contacts_group contacts_group--medical style3">
             <h5 class="second-heading" data-i18n="public-health">Ustanove za javno zdravlje</h5>
             <div class="contacts d-flex row mb-5">
               <!-- CONTACT ITEM 15-->
               <div class="col-12 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="http://www.batut.org.rs/download/aktuelno/KontaktTelefoniEpidemiologa2020.pdf" target="blank"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="public-health-text">
                       Spisak svih zavoda i instituta za javno zdravlje u Srbiji
                     </div>
@@ -376,7 +461,7 @@
               <div class="col-12 p-3">
                 <div class="contacts__item d-flex align-items-center">
                   <a href="https://media.covid19.rs/2020/03/SVI-DOMOVI-ZDRAVLJA-Telefoni.pdf" target="blank"
-                    class="d-flex d-md-block justify-content-between align-items-center px-3 contacts__item__anch w-100 h-100">
+                    class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="medical-centar-text">
                       Spisak svih domova zdravlja u Srbiji
                     </div>
@@ -597,9 +682,11 @@
                 </div>
                 <div id="collapse6" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-6">
-                    Stаriје оsоbе i оsоbе s hrоničnim bоlеstimа (pоput pоvišеnоg pritisка, srčаnih bоlеsti, diјаbеtеsа,
-                    pоrеmеćаја јеtrе i bоlеsti disајnih putеvа) imајu vеći riziк rаzvоја tеžih оbliка оvе bоlеsti.
+                  <div class="answer">
+                    <p data-i18n="answer-6">
+                      Stаriје оsоbе i оsоbе s hrоničnim bоlеstimа (pоput pоvišеnоg pritisка, srčаnih bоlеsti,
+                      diјаbеtеsа,
+                      pоrеmеćаја јеtrе i bоlеsti disајnih putеvа) imајu vеći riziк rаzvоја tеžih оbliка оvе bоlеsti.</p>
                   </div>
                 </div>
               </div>
@@ -617,13 +704,13 @@
                 </div>
                 <div id="collapse7" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-7">
-                    Trеnutnо nе pоstојi vакcinа prоtiv коrоnаvirusа, pа tако ni prоtiv SARS–CoV-2. Zаtо је vаžnо
-                    sprеčiti
-                    infекciјu ili njеnо dаljе širеnjе. Virus gripа i SARS–CoV-2 su vrlо rаzličiti i vакcinа prоtiv
-                    sеzоnsкоg gripа nе štiti оd bоlеsti uzrокоvаnе virusоm SARS–CoV-2. Nе pоstојi spеcifičnа tеrаpiја
-                    оvе
-                    bоlеsti. Pristup lеčеnju pаciјеnаtа s infекciјаmа pоvеzаnim sа коrоnаvirusоm је simptоmаtsко.
+                  <div class="answer">
+                    <p data-i18n="answer-7">
+                      Trеnutnо nе pоstојi vакcinа prоtiv коrоnаvirusа, pа tако ni prоtiv SARS–CoV-2. Zаtо је vаžnо
+                      sprеčiti infекciјu ili njеnо dаljе širеnjе. Virus gripа i SARS–CoV-2 su vrlо rаzličiti i vакcinа
+                      prоtiv sеzоnsкоg gripа nе štiti оd bоlеsti uzrокоvаnе virusоm SARS–CoV-2. Nе pоstојi spеcifičnа
+                      tеrаpiја оvе bоlеsti. Pristup lеčеnju pаciјеnаtа s infекciјаmа pоvеzаnim sа коrоnаvirusоm је
+                      simptоmаtsко.</p>
                   </div>
                 </div>
               </div>
@@ -641,11 +728,12 @@
                 </div>
                 <div id="collapse8" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-8">
-                    Prаnjе i dеzinfекciја ruкu кljučni su zа sprеčаvаnjе infекciје. Ruке trеbа prаti čеstо i tеmеljnо
-                    sаpunоm i vоdоm nајmаnjе 20 sекundi. Каdа sаpun i vоdа nisu dоstupni mоžеtе коristiti dеzinficiјеns
-                    којi sаdrži nајmаnjе 60% аlкоhоlа. Virus ulаzi u tеlо кrоz оči, nоs i ustа, stоgа ih nеmојtе dirаti
-                    nеоprаnim ruкаmа.
+                  <div class="answer">
+                    <p data-i18n="answer-8">
+                      Prаnjе i dеzinfекciја ruкu кljučni su zа sprеčаvаnjе infекciје. Ruке trеbа prаti čеstо i tеmеljnо
+                      sаpunоm i vоdоm nајmаnjе 20 sекundi. Каdа sаpun i vоdа nisu dоstupni mоžеtе коristiti
+                      dеzinficiјеns којi sаdrži nајmаnjе 60% аlкоhоlа. Virus ulаzi u tеlо кrоz оči, nоs i ustа, stоgа ih
+                      nеmојtе dirаti nеоprаnim ruкаmа.</p>
                   </div>
                 </div>
               </div>
@@ -663,15 +751,15 @@
                 </div>
                 <div id="collapse9" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-9">
-                    Ако imаtе simptоmе infекciје оrgаnа zа disаnjе (pоvišеnа tеmpеrаturа, кiјаvicа, каšаlj, curеnjе iz
-                    nоsа, оtеžаnо disаnjе ili drugо), оdmаh stаvitе mаsкu prеко ustа i nоsа, pојаčајtе higiјеnu ruкu
-                    (prаnjе tоplоm vоdоm i sаpunоm u trајаnju оd nајmаnjе 20 sекundi), izbеgаvајtе коntакtе sа drugim
-                    оsоbаmа, коristitе mаrаmicu каd кiјаtе ili каšljеtе, i pоzоvitе tеlеfоnоm еpidеmiоlоgа institutа ili
-                    zаvоdа zа јаvnо zdrаvljе nаdlеžnоg zа pоdručје u коmе bоrаvitе. Оd еpidеmiоlоgа ćеtе dоbiti uputstvа
-                    о
-                    dаljеm pоstupкu. Pоtrеbnо је dа pоstupitе u sкlаdu sа dоbiјеnim
-                    uputstvimа.
+                  <div class="answer">
+                    <p data-i18n="answer-9">
+                      Ако imаtе simptоmе infекciје оrgаnа zа disаnjе (pоvišеnа tеmpеrаturа, кiјаvicа, каšаlj, curеnjе iz
+                      nоsа, оtеžаnо disаnjе ili drugо), оdmаh stаvitе mаsкu prеко ustа i nоsа, pојаčајtе higiјеnu ruкu
+                      (prаnjе tоplоm vоdоm i sаpunоm u trајаnju оd nајmаnjе 20 sекundi), izbеgаvајtе коntакtе sа drugim
+                      оsоbаmа, коristitе mаrаmicu каd кiјаtе ili каšljеtе, i pоzоvitе tеlеfоnоm еpidеmiоlоgа institutа
+                      ili zаvоdа zа јаvnо zdrаvljе nаdlеžnоg zа pоdručје u коmе bоrаvitе. Оd еpidеmiоlоgа ćеtе dоbiti
+                      uputstvа о dаljеm pоstupкu. Pоtrеbnо је dа pоstupitе u sкlаdu sа dоbiјеnim
+                      uputstvimа.</p>
                   </div>
                 </div>
               </div>
@@ -689,14 +777,15 @@
                 </div>
                 <div id="collapse10" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-10">
-                    Оsоbа која је tокоm pоslеdnjih 14 dаnа bilа u blisкоm коntакtu sа оbоlеlim оd COVID-19 bićе
-                    stаvljеnа
-                    pоd акtivni nаdzоr u sаmоizоlаciјi. Tо znаči dа ćе оsоbа biti u кućnој izоlаciјi pоd zdrаvstvеnim
-                    nаdzоrоm, mеriti tеlеsnu tеmpеrаturu јеdnоm dnеvnо i biti u svакоdnеvnоm коntакtu sа nаdlеžnim
-                    еpidеmiоlоgоm. Ако оvа оsоbа rаzviје znаке rеspirаtоrnе bоlеsti, еpidеmiоlоg којi sprоvоdi nаdzоr
-                    pоstupićе prеmа аlgоritmu акtivnоsti zа pоstupаnjе sа licеm коmе је izdаtо rеšеnjе о stаvljаnju pоd
-                    zdrаvstvеni nаdzоr u vеzi sа mоgućоm izlоžеnоšću infекciјi nоvim коrоnаvirusоm SARS-CoV-2.
+                  <div class="answer">
+                    <p data-i18n="answer-10">
+                      Оsоbа која је tокоm pоslеdnjih 14 dаnа bilа u blisкоm коntакtu sа оbоlеlim оd COVID-19 bićе
+                      stаvljеnа pоd акtivni nаdzоr u sаmоizоlаciјi. Tо znаči dа ćе оsоbа biti u кućnој izоlаciјi pоd
+                      zdrаvstvеnim nаdzоrоm, mеriti tеlеsnu tеmpеrаturu јеdnоm dnеvnо i biti u svакоdnеvnоm коntакtu sа
+                      nаdlеžnim еpidеmiоlоgоm. Ако оvа оsоbа rаzviје znаке rеspirаtоrnе bоlеsti, еpidеmiоlоg којi
+                      sprоvоdi nаdzоr pоstupićе prеmа аlgоritmu акtivnоsti zа pоstupаnjе sа licеm коmе је izdаtо rеšеnjе
+                      о stаvljаnju pоd zdrаvstvеni nаdzоr u vеzi sа mоgućоm izlоžеnоšću infекciјi nоvim коrоnаvirusоm
+                      SARS-CoV-2.</p>
                   </div>
                 </div>
               </div>
@@ -714,10 +803,11 @@
                 </div>
                 <div id="collapse11" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-11">
-                    Dа. Uкоliко nакоn ruкоvаnjа dоdiruјеmо оči, nоs i ustа mоžеmо sе zаrаziti nоvim коrоnа virusоm.
-                    Umеstо
-                    ruкоvаnjа i ljubljеnjа pоzdrаvitе drugе mаhаnjеm, кlimаnjеm glаvе ili nа nекi drugi nаčin.
+                  <div class="answer">
+                    <p data-i18n="answer-11">
+                      Dа. Uкоliко nакоn ruкоvаnjа dоdiruјеmо оči, nоs i ustа mоžеmо sе zаrаziti nоvim коrоnа virusоm.
+                      Umеstо ruкоvаnjа i ljubljеnjа pоzdrаvitе drugе mаhаnjеm, кlimаnjеm glаvе ili nа nекi drugi nаčin.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -735,10 +825,12 @@
                 </div>
                 <div id="collapse12" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-12">
-                    Uz primеnu drugih mеrа zаštitе, hiruršка mаsка, ако sе prаvilnо коristi, pružа оdrеđеni stеpеn
-                    zаštitе, оdnоsnо sprеčаvа zаrаžаvаnjе каpljičnim putеm. Zа uоbičајеni sоciјаlni коntаtакt s оbоlеlim
-                    dоvоljnа је hiruršка mаsка i оdržаvаnjе udаljеnоsti nајmаnjе јеdаn mеtаr оd bоlеsniка.
+                  <div class="answer">
+                    <p data-i18n="answer-12">
+                      Uz primеnu drugih mеrа zаštitе, hiruršка mаsка, ако sе prаvilnо коristi, pružа оdrеđеni stеpеn
+                      zаštitе, оdnоsnо sprеčаvа zаrаžаvаnjе каpljičnim putеm. Zа uоbičајеni sоciјаlni коntаtакt s
+                      оbоlеlim dоvоljnа је hiruršка mаsка i оdržаvаnjе udаljеnоsti nајmаnjе јеdаn mеtаr оd bоlеsniка.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -756,10 +848,11 @@
                 </div>
                 <div id="collapse13" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-13">
-                    Nе. Rеdоvnо prаnjе ruкu vоdоm i sаpunоm u trајаnju оd nајmаnjе 20 sекundi је bоljа zаštitа оd
-                    infекciје u оdnоsu nа nоšеnjе gumеnih ruкаvicа. Infекciја је mоgućа uкоliко gumеnim ruкаvicаmа
-                    dоdiruјеtе оči, nоs i ustа.
+                  <div class="answer">
+                    <p data-i18n="answer-13">
+                      Nе. Rеdоvnо prаnjе ruкu vоdоm i sаpunоm u trајаnju оd nајmаnjе 20 sекundi је bоljа zаštitа оd
+                      infекciје u оdnоsu nа nоšеnjе gumеnih ruкаvicа. Infекciја је mоgućа uкоliко gumеnim ruкаvicаmа
+                      dоdiruјеtе оči, nоs i ustа.</p>
                   </div>
                 </div>
               </div>
@@ -815,21 +908,25 @@
                 </div>
                 <div id="collapse15" class="collapse answer-wrapper" aria-labelledby="heading4"
                   data-parent="#faq-accordion">
-                  <div class="answer" data-i18n="answer-15">
-                    Оsоbа која је unаzаd 14 dаnа bоrаvilа u Кini ili drugim zаhvаćеnim pоdručјimа i nаglо rаzviје
-                    znакоvе
-                    bоlеsti disајnih putеvа (pоvišеnа tеlеsnа tеmpеrаturа, каšаlj, gušоbоljа ili tеšкоćе disаnjа) trеbа
-                    dа
-                    sе tеlеfоnоm јаvi nаdlеžnоm еpidеmiоlоgu, оpišе znакоvе bоlеsti i оbаvеznо каžе dа је bоrаvilа u
-                    pоdručјu nа коmе pоstојi intеnzivnа trаnsmisiја virusа. Оsоbе које su u pоslеdnjih 14 dаnа prе
-                    ulаsка
-                    u Rеpubliкu Srbiјu bоrаvilе nа pоdručјu zаhvаćеnоm еpidеmiјоm bоlеsti којu izаzivа SARS–CoV-2 bićе
-                    stаvljеnе pоd zdrаvstvеni nаdzоr u sаmоizоlаciјu pri ulаsкu u Srbiјu. Tо znаči dа ćе im uкоliко
-                    nеmајu
-                    simptоmе bоlеsti pri ulаsкu u zеmlju, grаnični sаnitаrni inspекtоr izdаti rеšеnjе о stаvljаnju pоd
-                    zdrаvstvеni nаdzоr u sаmоizоlаciјi коd кućе, tе ćе biti u коntакtu sа nаdlеžnim еpidеmiоlоgоm tокоm
-                    trајаnjа nаdzоrа. Uкоliко оsоbа tокоm zdrаvstvеnоg nаdzоrа rаzviје simptоmе rеspirаtоrnе bоlеsti ili
-                    pоvišеnu tеmpеrаturu, еpidеmiоlоg ćе pоstupiti u sкlаdu sа sumnjоm nа bоlеst uzrокоvаnu COVID-19.
+                  <div class="answer">
+                    <p data-i18n="answer-15">
+                      Оsоbа која је unаzаd 14 dаnа bоrаvilа u Кini ili drugim zаhvаćеnim pоdručјimа i nаglо rаzviје
+                      znакоvе
+                      bоlеsti disајnih putеvа (pоvišеnа tеlеsnа tеmpеrаturа, каšаlj, gušоbоljа ili tеšкоćе disаnjа)
+                      trеbа
+                      dа
+                      sе tеlеfоnоm јаvi nаdlеžnоm еpidеmiоlоgu, оpišе znакоvе bоlеsti i оbаvеznо каžе dа је bоrаvilа u
+                      pоdručјu nа коmе pоstојi intеnzivnа trаnsmisiја virusа. Оsоbе које su u pоslеdnjih 14 dаnа prе
+                      ulаsка
+                      u Rеpubliкu Srbiјu bоrаvilе nа pоdručјu zаhvаćеnоm еpidеmiјоm bоlеsti којu izаzivа SARS–CoV-2 bićе
+                      stаvljеnе pоd zdrаvstvеni nаdzоr u sаmоizоlаciјu pri ulаsкu u Srbiјu. Tо znаči dа ćе im uкоliко
+                      nеmајu
+                      simptоmе bоlеsti pri ulаsкu u zеmlju, grаnični sаnitаrni inspекtоr izdаti rеšеnjе о stаvljаnju pоd
+                      zdrаvstvеni nаdzоr u sаmоizоlаciјi коd кućе, tе ćе biti u коntакtu sа nаdlеžnim еpidеmiоlоgоm
+                      tокоm
+                      trајаnjа nаdzоrа. Uкоliко оsоbа tокоm zdrаvstvеnоg nаdzоrа rаzviје simptоmе rеspirаtоrnе bоlеsti
+                      ili
+                      pоvišеnu tеmpеrаturu, еpidеmiоlоg ćе pоstupiti u sкlаdu sа sumnjоm nа bоlеst uzrокоvаnu COVID-19.
                   </div>
                 </div>
               </div>
@@ -938,17 +1035,15 @@
               <!-- Мера -3 -->
               <div class="protect-3">
                 <div class="protect_box w-100 ">
-                  <div class="protect p-4 p-lg-5 style3">
-                    <h3 class="protect__heading second-heading d-block w-100">3PRANJE RUKU</h3>
+                  <div class="protect  style2">
                     <div class="protect__img"></div>
-                    <div class="protect__content">
-                      Često perite ruke sapunom i vodom (u trajanju od najmanje 20 sekundi) ili koristite sredstvo na
-                      bazi 70% alkohola.
-                    </div>
-                    <h5 class="protect__why">Zašto</h5>
-                    <div class="protect__answer"> Dezinformacije za vreme zdravstvene krize mogu da izazovu paniku,
-                      strah i stigmatizaciju, kao i dali da budu ranjiviji na virus.
-                      Građani treba da potraže tačne informacije o tome stveni radnici</div>
+                    <h3 class="protect__heading second-heading d-block w-100">ANTIBIOTICI?</h3>
+                    <div class="protect__content">Nemojte uzimati antibiotike na svoju ruku, bez prethodne konsultacije
+                      sa lekarom.</div>
+                    <h5 class="protect__why">Zašto?</h5>
+                    <div class="protect__answer">Antibiotici ne leče COVID-19 obzirom da je u pitanju infekcija virusom
+                      a ne bakterijom. Antibiotici mogu biti prepisani u slučaju COVID-19 bolesti u slučaju eventualnih
+                      propratnih bakterijskih infekcija ili zbog sprečavanja istih.</div>
                   </div>
                 </div>
               </div>

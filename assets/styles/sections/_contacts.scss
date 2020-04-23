@@ -20,14 +20,16 @@
             color: $light;
             background-color: rgba(0, 0, 0, .25);
             background-color: rgba(220, 220, 255, 0.15);
-            &:hover{
+
+            &:hover {
                 border-top: 1px solid $color1;
                 text-decoration: none;
-                color:$light;
+                color: $light;
             }
         }
 
         &__heading {
+            text-align: left;
             font-weight: 700;
             letter-spacing: 1px;
             font-size: 2.2rem;
@@ -36,7 +38,7 @@
 
         &__num {
             font-family: open-sans-bold;
-            font-size: 2.6rem;
+            font-size: 2.5rem;
             color: $color3;
             display: inline-block;
             background-image: url(../../assets/icons/call.svg);
@@ -47,6 +49,7 @@
             padding-left: 4rem;
             transition: .3s color;
             white-space: nowrap;
+            margin-left: 2rem;
         }
 
 
@@ -86,9 +89,21 @@
     .contacts {
         &__item {
             text-align: left;
+        }
+    }
+}
 
-            &__num {
-                margin-left: 2rem;
+@media screen and (min-width: 768px) {
+    .contacts {
+        &__item {
+            &__anch {
+                flex-direction: column;
+            }
+            &__num{
+                margin-left: 0;
+            }
+            &__heading {
+                text-align: center;
             }
         }
     }
@@ -100,11 +115,22 @@
             &__anch {
                 font-size: 1.75rem;
                 letter-spacing: 0;
+                min-height: 128px;
             }
 
             &__num {
                 font-size: 2.2rem;
             }
+
+
+        }
+
+        &_group--upset .contacts__item__anch {
+            min-height: 161px;
+        }
+
+        &_group--medical .contacts__item__anch {
+            min-height: 111px;
         }
     }
 }

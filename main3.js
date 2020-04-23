@@ -1,4 +1,4 @@
-// window.onload = function(){
+window.onload = function(){
 // setTimeout(function(){
 
 
@@ -375,10 +375,26 @@ function getAjaxPriv(){
 
             // $(window).scrollTop(position + 5)
         }
+function checkSections(){
+    const checks = Array.prototype.slice.call(document.querySelectorAll('.check'));
+    $(checks).on("click", function(el){
+        el.stopPropagation();
+        $(el.target).toggleClass("active");
+        checkIndex = $(checks).index(el.target);
+         var theIcon = $(`.icon-btn[data-index=${checkIndex}]`);
+        //  $(`.icon-btn[data-index=${checkIndex}]`)[0].css({border: "2ps solid red;"})
+        console.log($(theIcon).toggleClass("hide"))
+
+
+    })
+}
+checkSections();
+
+
 
 
 })()
 
 
 // },3000);
-// }
+}
