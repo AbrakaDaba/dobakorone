@@ -25,6 +25,11 @@
   color: #3ee00d;
 }
 
+.text-cta:hover {
+  color: #3ee00d;
+  text-decoration: underline;
+}
+
 .style1 h5 {
   color: #e3ffb5;
 }
@@ -59,6 +64,12 @@
 
 .hide {
   display: none !important;
+}
+
+.important-text {
+  text-align: center;
+  color: #e3ffb5;
+  font-size: 2.5rem;
 }
 
 @-webkit-keyframes alertColors {
@@ -130,6 +141,30 @@
   }
   100% {
     background-size: 3rem;
+  }
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
 
@@ -368,6 +403,25 @@ body * {
   background-color: #172031f7;
 }
 
+.roto-loader {
+  display: none;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%, -50%);
+          transform: translateX(-50%, -50%);
+  -webkit-animation: rotoLoader 20s linear infinite;
+          animation: rotoLoader 20s linear infinite;
+}
+
+.roto-loader img {
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
 @media screen and (min-width: 576px) {
   html {
     font-size: 47.5%;
@@ -565,12 +619,20 @@ header .icons-bar--top:before {
 }
 
 header .icons-bar--top .settings-btn {
-  width: 10rem;
-  height: 10rem;
-  background-image: url(../../assets/icons/gear.svg);
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../../assets/icons/settings.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 7rem;
+  background-size: 3rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+header .icons-bar--top .settings-btn:hover {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 header .icon-btn {
@@ -750,30 +812,6 @@ header.scroll .icon-btn__text {
   -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   border-radius: 50%;
-}
-
-@-webkit-keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
 }
 
 #alert-colors {
@@ -1383,12 +1421,13 @@ div[class^="protect-"] {
 
 .section-list__close-btn {
   position: absolute;
-  font-size: 4rem;
+  font-size: 5.5rem;
   line-height: 1;
   color: #ffffff;
   padding: 0 1rem 1rem 1rem;
   top: 0;
-  right: 0;
+  right: 1rem;
+  cursor: pointer;
 }
 
 /* Themes */

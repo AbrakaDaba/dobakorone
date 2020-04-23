@@ -28,32 +28,37 @@ header {
     &--top {
       transition: .3s height;
       background-color: #172031f7;
-       &:before {
+
+      &:before {
         // content: "";
         position: absolute;
         height: 100%;
         width: calc(100% + 15px);
-// background-image: url(../../assets/img/Gear.svg);
-      background-position: left 6px, right 7px;
-      background-size: 6.5rem;
+        // background-image: url(../../assets/img/Gear.svg);
+        background-position: left 6px, right 7px;
+        background-size: 6.5rem;
         left: 50%;
         z-index: -1;
         box-shadow: 0px 5px 12px black;
 
       }
-      .settings-btn{
-        width: 10rem;
-        height: 10rem;
-        background-image: url(../../assets/icons/gear.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 7rem;
+
+      .settings-btn {
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+        background-image: url(../../assets/icons/settings.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 3rem;
+        transform: rotate(90deg);
+        &:hover{
+          transform: rotate(-90deg);
+        }
       }
     }
 
   }
-
-
 
 
 
@@ -224,7 +229,8 @@ header {
     ;
     z-index: -1;
   }
-  &-bg__1:before{
+
+  &-bg__1:before {
     background-image: url(../../assets/img/stethoscope.png), url(../../assets/img/serbia.png);
   }
 }
@@ -265,6 +271,7 @@ header {
   // filter: grayscale(100%) opacity(0.7);
   filter: opacity(0.7);
 }
+
 .glow-on-hover {
   border: none;
   outline: none;
@@ -292,12 +299,6 @@ header {
 }
 
 
-
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
-}
 
 
 

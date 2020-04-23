@@ -2,7 +2,7 @@ $.i18n().locale = "cyr";
 var set_locale_to = function (locale) {
   if (locale)
     $.i18n().locale = "locale";
-    
+
 
 };
 jQuery(function () {
@@ -30,16 +30,18 @@ jQuery(function () {
       //////////  END --- (INCLUDE THIS UL IN YOUR HTML CODE) //////////
 
       $('.switch-locale').on('click', 'a', function (e) {
-        $('body').animate({
-          opacity: "0.5"
+        $('body')
+        .animate({
+          opacity: "0.25"
         },"swing")
         History.pushState(null, null, "?locale=" + $(this).data('locale'));
 
 
         e.preventDefault();
-        $('body').animate({
+        $('body')
+        .animate({
           opacity: "1"
-        }, "swing")
+        }, "swing") 
       });
 
       ////////// END --- FOR CUSTOM LAGUAGE SWITCHER:  /////////////

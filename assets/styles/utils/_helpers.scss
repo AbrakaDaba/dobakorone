@@ -7,6 +7,10 @@
 
 .text-cta{
     color:$color1;
+    &:hover{
+        color:$color1;
+        text-decoration: underline;
+    }
 }
 .style1 {
     h5 {
@@ -47,4 +51,11 @@
 
 .hide{
     display: none!important;
+}
+
+
+.important-text{
+    text-align: center;
+    color: $color4;
+    font-size: 2.5rem;
 }

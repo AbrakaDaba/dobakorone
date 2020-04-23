@@ -37,6 +37,22 @@ body *{
     background-color: #172031f7;
 }
 
+.roto-loader{
+    display: none;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+    animation: rotoLoader 20s linear infinite;
+    img{
+        display: block;
+        width: 10px;
+        height: 10px;
+    }
+}
+
 @media screen and (min-width: 576px) {
     html{
         font-size: 47.5%;
