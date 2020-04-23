@@ -564,8 +564,18 @@ header .icons-bar--top:before {
           box-shadow: 0px 5px 12px black;
 }
 
+header .icons-bar--top .settings-btn {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../../assets/icons/gear.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7rem;
+}
+
 header .icon-btn {
-  width: 16rem;
+  width: calc(100% / 8);
+  float: left;
   background-size: 6rem;
   background-repeat: no-repeat;
   background-position: center 1rem;
@@ -709,8 +719,8 @@ header.scroll .icon-btn__text {
   height: 7.5rem;
   -webkit-transition: .3s height;
   transition: .3s height;
-  -webkit-filter: grayscale(100%) opacity(0.7);
-          filter: grayscale(100%) opacity(0.7);
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
 }
 
 .glow-on-hover {
@@ -726,14 +736,14 @@ header.scroll .icon-btn__text {
   content: '';
   background: linear-gradient(45deg, #ff4455, #ff7300, #edb92e, #48ff00, #ff7300, #ff4455, #ff7300, #48ff00, #edb92e);
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 10%;
+  left: 10%;
   background-size: 400%;
   z-index: -1;
   -webkit-filter: blur(5px);
           filter: blur(5px);
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   -webkit-animation: glowing 20s linear infinite;
           animation: glowing 20s linear infinite;
   opacity: 1;
@@ -1299,7 +1309,6 @@ div[class^="protect-"] {
   height: 100%;
   background-color: #070918e6;
   color: #fff;
-  will-change: transform;
   -webkit-transition: -webkit-transform .45s;
   transition: -webkit-transform .45s;
   transition: transform .45s;
@@ -1370,6 +1379,16 @@ div[class^="protect-"] {
 
 .section-list .check .label {
   position: relative;
+}
+
+.section-list__close-btn {
+  position: absolute;
+  font-size: 4rem;
+  line-height: 1;
+  color: #ffffff;
+  padding: 0 1rem 1rem 1rem;
+  top: 0;
+  right: 0;
 }
 
 /* Themes */

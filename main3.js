@@ -70,7 +70,7 @@ window.onload = function(){
 
         // IF THERE IS NO OPEN ICONS AND SOME IS CLICKED
         function firstClick(el, contentHeights, theIc, icons_btns) {
-            icons_btns[theIc - 1].classList.remove("active_icon");
+            icons_btns[theIc].classList.remove("active_icon");
             $(el.target).addClass("active_icon");
             $("#" + theIc).css({
                 opacity: 1
@@ -375,6 +375,12 @@ function getAjaxPriv(){
 
             // $(window).scrollTop(position + 5)
         }
+
+
+// SETTINGS FUNCTIONS //
+
+
+// checkSections //
 function checkSections(){
     const checks = Array.prototype.slice.call(document.querySelectorAll('.check'));
     $(checks).on("click", function(el){
@@ -391,6 +397,13 @@ function checkSections(){
 checkSections();
 
 
+// settings button / close settings
+$(".settings-btn").on("click",function(){
+    $(".settings-menu").addClass("active");
+})
+$(".section-list__close-btn").on("click",function(){
+    $(".settings-menu").removeClass("active");
+})
 
 
 })()
