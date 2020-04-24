@@ -358,8 +358,9 @@ window.onload = function () {
                     //     height: "0"
                     // });
                     $(".logo_img").css({
-                        height: "6rem"
+                        height: "4.5rem"
                     });
+                    $(".logo_img").attr("src","./assets/img/logo_doba_korone.png");
                 } else {
                     $(".scroll-up-btn").removeClass("flex");
                     $("header").removeClass("scroll");
@@ -370,8 +371,9 @@ window.onload = function () {
                     //     height: "10rem"
                     // });
                     $(".logo_img").css({
-                        height: "7.5rem"
+                        height: "5rem"
                     });
+                    $(".logo_img").attr("src","./assets/img/logo10wl.png");
                 }
             })
         }

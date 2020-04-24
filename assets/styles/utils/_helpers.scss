@@ -5,13 +5,15 @@
     // transform: rotate(-90deg);
 }
 
-.text-cta{
-    color:$color1;
-    &:hover{
-        color:$color1;
+.text-cta {
+    color: $color1;
+
+    &:hover {
+        color: $color1;
         text-decoration: underline;
     }
 }
+
 .style1 {
     h5 {
         color: $heading1;
@@ -27,9 +29,10 @@
 }
 
 .style2 {
-    .second-heading{
+    .second-heading {
         color: $color1;
     }
+
     h5 {
         color: $color3;
     }
@@ -38,6 +41,7 @@
         border-top: 1px solid $heading3;
     }
 }
+
 .style3 {
 
     h5 {
@@ -49,13 +53,35 @@
     }
 }
 
-.hide{
-    display: none!important;
+.hide {
+    display: none !important;
 }
 
 
-.important-text{
+.important-text {
     text-align: center;
-    color: $color4;
+    color: $dark3;
     font-size: 2.5rem;
+    padding: 5rem 2rem;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 60%;
+        background-image: linear-gradient(90deg, transparent, #3ee00d, transparent);
+        background-image: linear-gradient(90deg, transparent, $color4, transparent);
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.divider {
+    height: 1px;
+    width: 75%;
+    background-image: linear-gradient(90deg, transparent, #3ee00d, transparent);
+    background-image: linear-gradient(90deg, transparent, $color4, transparent);
+    margin: 4rem auto;
 }

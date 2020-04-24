@@ -68,8 +68,35 @@
 
 .important-text {
   text-align: center;
-  color: #e3ffb5;
+  color: #C7C7C7;
   font-size: 2.5rem;
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.important-text:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 60%;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#3ee00d), to(transparent));
+  background-image: linear-gradient(90deg, transparent, #3ee00d, transparent);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#e3ffb5), to(transparent));
+  background-image: linear-gradient(90deg, transparent, #e3ffb5, transparent);
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.divider {
+  height: 1px;
+  width: 75%;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#3ee00d), to(transparent));
+  background-image: linear-gradient(90deg, transparent, #3ee00d, transparent);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#e3ffb5), to(transparent));
+  background-image: linear-gradient(90deg, transparent, #e3ffb5, transparent);
+  margin: 4rem auto;
 }
 
 @-webkit-keyframes alertColors {
@@ -354,10 +381,25 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .main-heading {
+    line-height: 1.6;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
   p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7;
     font-family: Open-sans;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-heading {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .second-heading {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -734,7 +776,6 @@ header.scroll .icon-btn__text {
 .icons-contents {
   margin-top: 20rem;
   position: relative;
-  border-bottom: 1px solid #68645a;
   z-index: 1;
   -webkit-transition: all .35s;
   transition: all .35s;
@@ -766,6 +807,21 @@ header.scroll .icon-btn__text {
   background-image: url(../../assets/img/stethoscope.png), url(../../assets/img/serbia.png);
 }
 
+.icons-contents:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 60%;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#3ee00d), to(transparent));
+  background-image: linear-gradient(90deg, transparent, #3ee00d, transparent);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#e3ffb5), to(transparent));
+  background-image: linear-gradient(90deg, transparent, #e3ffb5, transparent);
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
 .icon-content {
   z-index: 1;
   width: 100%;
@@ -777,12 +833,15 @@ header.scroll .icon-btn__text {
   position: absolute;
 }
 
+.logo-width {
+  min-width: 100px;
+}
+
 .logo_img {
-  height: 7.5rem;
+  height: 5rem;
   -webkit-transition: .3s height;
   transition: .3s height;
-  -webkit-filter: opacity(0.7);
-          filter: opacity(0.7);
+  margin-bottom: .3rem;
 }
 
 .glow-on-hover {
@@ -795,7 +854,6 @@ header.scroll .icon-btn__text {
 }
 
 .glow-on-hover:before {
-  content: '';
   background: linear-gradient(45deg, #ff4455, #ff7300, #edb92e, #48ff00, #ff7300, #ff4455, #ff7300, #48ff00, #edb92e);
   position: absolute;
   top: 10%;
@@ -814,7 +872,9 @@ header.scroll .icon-btn__text {
   border-radius: 50%;
 }
 
-#alert-colors {
+.alert-colors {
+  line-height: 1.4;
+  font-size: 16px;
   -webkit-animation: alertColors 4s linear 2s infinite;
           animation: alertColors 4s linear 2s infinite;
 }
@@ -831,6 +891,12 @@ header.scroll .icon-btn__text {
     bottom: 0;
     font-size: 15px;
   }
+  .logo-width {
+    min-width: 92px;
+  }
+  .alert-colors {
+    font-size: 1.9rem;
+  }
 }
 
 @media only screen and (max-width: 1040px) {
@@ -840,6 +906,19 @@ header.scroll .icon-btn__text {
   header .icon-btn__text {
     bottom: 0;
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header .icons-bar--top .container {
+    min-width: 0;
+  }
+  header .icon-btn__text {
+    bottom: 0;
+    font-size: 15px;
+  }
+  .logo-width {
+    min-width: 68px;
   }
 }
 
@@ -1465,6 +1544,14 @@ div[class^="protect-"] {
 .home-time .home-time-nav__item:hover {
   border: solid 1px transparent;
   border-bottom: solid 1px #3ee00d;
+}
+
+.solidarity__item:last-of-type {
+  margin-bottom: 5rem;
+}
+
+.solidarity__item p {
+  margin: 1.5rem 0;
 }
 
 /* Themes */

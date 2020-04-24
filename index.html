@@ -5,23 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/icons/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
 
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
@@ -120,12 +107,12 @@
       <!-- TOP BAR -->
       <div class="icons-bar icons-bar--top">
         <div class="container d-flex justify-content-between align-items-center h-100">
-          <a class="glow-on-hover navbar-brand mr-0" href="#"><img src="./assets/img/logo9.png"
+          <a class="glow-on-hover navbar-brand mr-0 logo-width" href="#"><img src="./assets/img/logo10wl.png"
               alt="Image by Vektor Kunst iXimus from Pixabay" class="logo_img"></a>
           <!-- <a class="navbar-brand mr-0" href="#"><img src="../assets/icons/logoV.svg" -->
           <ul class="switch-locale text-center">
-            <li><span id="alert-colors" data-i18n="alert-message-1">#SutraMožeBitiKasno</span></li>
-            <li><span id="alert-colors" data-i18n="alert-message-2">#OstaniKodKuće</span></li>
+            <li class="alert-colors"><span data-i18n="alert-message-1">#SutraMožeBitiKasno</span></li>
+            <li class="alert-colors"><span data-i18n="alert-message-2">#OstaniKodKuće</span></li>
           </ul>
           <div class="settings-btn"></div>
         </div>
@@ -172,7 +159,7 @@
         <div class="container icons-contents-bg icons-contents-bg__1 ">
           <h2 class="main-heading" data-i18n="phone-numbers">BROJEVI TELEFONA</h2>
 
-          <div class="contacts_group style3">
+          <div class="contacts_group style1">
             <h5 class="second-heading" data-i18n="main-info">- Najvažnije informacije -</h5>
             <div class="contacts d-flex row mb-5">
 
@@ -394,7 +381,7 @@
             </div>
           </div>
 
-          <div class="contacts_group contacts_group--upset style1">
+          <div class="contacts_group contacts_group--upset style3">
             <h5 class="second-heading" data-i18n="upset">Uznemireni ste</h5>
             <div class="contacts d-flex row mb-5">
 
@@ -440,7 +427,7 @@
             </div>
           </div>
 
-          <div class="contacts_group contacts_group--medical style3">
+          <div class="contacts_group contacts_group--medical style1">
             <h5 class="second-heading" data-i18n="public-health">Ustanove za javno zdravlje</h5>
             <div class="contacts d-flex row mb-5">
               <!-- CONTACT ITEM 15-->
@@ -458,7 +445,7 @@
             </div>
           </div>
 
-          <div class="contacts_group contacts_group--medical style1">
+          <div class="contacts_group contacts_group--medical style3">
             <h5 class="second-heading" data-i18n="medical-centar">Domovi zdravlja u Srbiji</h5>
             <div class="contacts d-flex row mb-5">
               <!-- CONTACT ITEM 15-->
@@ -986,7 +973,7 @@
 
       <!-- MERE ZAŠTITE -->
       <div class="icon-content" id="2">
-        <div class="container icons-contents-bg icons-contents-bg__3 ">
+        <div class="container icons-contents-bg icons-contents-bg__3  mb-5">
           <div>
             <h2 class="main-heading">MERE ZAŠTITE</h2>
             <h5 class="second-heading">Korona virus i kako da se zaštitite?</h5>
@@ -1036,7 +1023,7 @@
                   </div>
                 </div>
               </div>
-              <!-- Мера -3 -->
+              <!-- Мера -3 ANTIBIOTICI? -->
               <div class="protect-3">
                 <div class="protect_box w-100 ">
                   <div class="protect  style2">
@@ -1111,23 +1098,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Мера -8 -->
-              <div class="protect-8">
-                <div class="protect_box w-100 ">
-                  <div class="protect style3">
-                    <h3 class="protect__heading second-heading d-block w-100">1PRANJE RUKU</h3>
-                    <div class="protect__img"></div>
-                    <div class="protect__content">
-                      Često perite ruke sapunom i vodom (u trajanju od najmanje 20 sekundi) ili koristite sredstvo na
-                      bazi 70% alkohola.
-                    </div>
-                    <h5 class="protect__why">Zašto</h5>
-                    <div class="protect__answer"> Dezinformacije za vreme zdravstvene krize mogu da izazovu paniku,
-                      strah i stigmatizaciju, kao i da ljudi ostanu nezaštićeni ili da budu ranjiviji na virus. Građani
-                      treba da potraže tačne informacije o tome stveni radnici</div>
-                  </div>
-                </div>
-              </div>
               <!-- Мера -9 UPOTREBA MASKE -->
               <div class="protect-9">
                 <div class="protect_box w-100 ">
@@ -1148,60 +1118,16 @@
                   </div>
                 </div>
               </div>
-              <!-- Мера -10 -->
-              <div class="protect-10">
-                <div class="protect_box w-100 ">
-                  <div class="protect p-4 p-lg-5 style3">
-                    <h3 class="protect__heading second-heading d-block w-100">1PRANJE RUKU</h3>
-                    <div class="protect__img"></div>
-                    <div class="protect__content">
-                      Često perite ruke sapunom i vodom (u trajanju od najmanje 20 sekundi) ili koristite sredstvo na
-                      bazi 70% alkohola.
-                    </div>
-                    <h5 class="protect__why">Zašto</h5>
-                    <div class="protect__answer"> Dezinformacije za vreme zdravstvene krize mogu da izazovu paniku,
-                      strah i stigmatizaciju, kao i da ljudi ostanu nezaštićeni ili da budu ranjiviji na virus.
-                      Građani treba da potraže tačne informacije o tome stveni radnici</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Мера -11 -->
-              <div class="protect-11">
-                <div class="protect_box w-100 ">
-                  <div class="protect p-4 p-lg-5 style3">
-                    <h3 class="protect__heading second-heading d-block w-100">1PRANJE RUKU</h3>
-                    <div class="protect__img"></div>
-                    <div class="protect__content">
-                      Često perite ruke sapunom i vodom (u trajanju od najmanje 20 sekundi) ili koristite sredstvo na
-                      bazi 70% alkohola.
-                    </div>
-                    <h5 class="protect__why">Zašto</h5>
-                    <div class="protect__answer"> Dezinformacije za vreme zdravstvene krize mogu da izazovu paniku,
-                      strah i stigmatizaciju, kao i da ljudi ostanu nezaštićeni ili da budu ranjiviji na virus.
-                      Građani treba da potraže tačne informacije o tome stveni radnici</div>
-                  </div>
-                </div>
-              </div>
-
-
 
             </div>
 
+            <h3 class="protect__heading second-heading d-block w-100" data-i18n="more-protect-item">NE ZABORAVITE TAKOĐE DA:</h3>
 
-            <div class="protect-item">– Izbegavajte pozdravljanje rukovanjem ili ljubljenjem ,a sa sagovornicima
-              održavajte razdaljinu od najmanje jednog metra.</div>
-            <div class="protect-item">-Ako kašljete ili kijate prekrijte rukom usta i nos nadlakticom ili papirnom
-              maramicom. Maramicu odmah bacite u kantu za otpatke sa poklopcem i operite ruke.</div>
-            <div class="protect-item">-Često provetravajte prostorije u kojima boravite.</div>
-            <div class="protect-item">-Izbegavajte okupljanja sa većim brojem ljudi u zatvorenom prostoru.</div>
-            <div class="protect-item">-Ne uzimajte antibiotike na sopstvenu ruku.</div>
-            <div class="protect-item">-Masku koristite samo ako kijate ili kašljete ili ukoliko negujete bolesne.</div>
-            <div class="protect-item">Molimo građane da ne dele informacija iz nepouzdanih ili neproverenih izvora.
-              Dezinformacije za vreme zdravstvene krize mogu da izazovu paniku, strah i stigmatizaciju, kao i da ljudi
-              ostanu nezaštićeni ili da budu ranjiviji na virus. Građani treba da potraže tačne informacije o tome kako
-              da zaštite sebe i svoje porodice od poznatih izvora, kao što su Svetska zdravstvena organizacija, UNICEF,
-              državne zdravstvene institucije ili zdravstveni radnici.</div>
-            <div class="protect-item"></div>
+            <div class="protect-item"><p class="dot" data-i18n="more-protect-item-1">Održavate higijenu životnog prostora</p></div>
+            <div class="protect-item"><p class="dot" data-i18n="more-protect-item-2">Često provetravate prostorije u kojima boravite.</p></div>
+            <div class="protect-item"><p class="dot" data-i18n="more-protect-item-3">Radite od kuće ukoliko ste u mogućnosti.</p></div>
+            <div class="protect-item"><p class="dot" data-i18n="more-protect-item-4">Radite od kuće ukoliko ste u mogućnosti.</p></div>
+            <div class="protect-item text-center"><span data-i18n="more-protect-item-5">Sve mere zaštite preporučene od strane Instituta za javno zdravlje Srbije "Dr Milan Jovanović Batut" možete pronaći na </span><a class="text-cta" href="http://www.batut.org.rs/index.php?content=2035"> ovom linku</a>.</div>
           </div>
         </div>
       </div>
@@ -1211,11 +1137,22 @@
         <h2 class="main-heading">STATISTIČKI PODACI</h2>
         <div class="contacts_group">
 
-          <h5 class="second-heading">- Najvažnije informacije -</h5>
-          <div class="container">O dostupnim podacima:
-            Ovi podaci se brzo menjaju, tako da ono što je prikazano može biti već zastarelo. Informacije o prijavljenim
-            slučajevima ne uključuju sve slučajeve. Potvrđeni slučajevi nisu svi postojeći slučajevi. Uključuju samo
-            ljude koji su pozitivno testirani. Pravila i dostupnost ispitivanja razlikuju se od zemlje do zemlje.</div>
+          <h5 class="second-heading">O dostupnim podacima</h5>
+          <div class="container">
+            <p>
+
+              O dostupnim podacima:
+              Potvrđeni slučajevi nisu svi postojeći slučajevi, već uključuju samo ljude koji su testirani i potvrđeni
+              pozitivno.
+              Ovi se podaci brzo menjaju, mogu biti zastareli i možda ne odražavaju slučajeve za koje se još čeka
+              izveštavanje.
+              Podaci o slučajevima, pravila i dostupnost ispitivanja razlikuju se od zemlje do zemlje. Zašto vidim
+              različite podatke iz različitih izvora?
+              Postoje različiti izvori koji prate i objedinjuju podatke o koronavirusu. Ažuriraju se u različito vreme i
+              mogu imati različite načine prikupljanja podataka.
+            </p>
+          </div>
+
         </div>
       </div>
 
@@ -1298,19 +1235,71 @@
       </div>
 
       <!-- SOLIDARNOST -->
-      <div class="icon-content container" id="6">
-        <div>
+      <div class="icon-content container solidarity" id="6">
+        <h2 class="main-heading" data-i18n="volunteer">SAMO ZAJEDNO MOŽEMO DA POBEDIMO!</h2>
 
-          <h2 class="main-heading">SOLIDARNOST I VOLONTIRANJE</h2>
-
-          <h5 class="second-heading">BUDI VOLONTER</h5>
-          <div class="protect-item">Vlada je takođe uspostavila nacionalnu platformu za prijavu volontera na adresi www.budivolonter.gov.rs . Svi građani koji ne spadaju u rizičnu grupu i žele da pomognu našim najstarijim sugrađanima i drugim rizičnim grupama stanovništva, mogu se prijaviti popunjavanjem prijave na sajtu www.budivolonter.gov.rs ili besplatnim pozivanjem kontakt centra COVID-19 na broj 19819 svakim danom od 08 do 22 časa. Nakon što nadležne službe odobre prijavu, volontere će kontaktirati gradski i opštinski centri sa detaljnim uputstvima i prvim zadacima. Sve podnete prijave zainteresovanih građana koji žele da pomognu i budu volonteri će se proveravati, sa ciljem da se spreči i najmanja zloupotreba. Platforma je realizovana uz podršku Programa Ujedinjenih nacija za razvoj (UNDP).</div>
-
-          <h5 class="second-heading">PRIJAVI NEZAKONITO PODIZANJE CENA</h5>
-          <div class="protect-item">Takođe je počeo sa radom i Kontakt centar za republičke inspekcije. Građani i privreda od danas mogu da prijave nezakonito podizanje cena životnih namirnica, lekova, medicinskih sredstava i zaštitne opreme na broj 011/6350-322 ili putem sajta inspektor.gov.rs. Operateri će na raspolaganju biti od 9 do 16 časova, a van radnog vremena moguće je ostaviti prijavu kao govornu poruku. Ovaj kontakt centar pokrenula je Vlada u saradnji sa Ministarstvom državne uprave i lokalne samouprave, Kancelarijom za IT i eUpravu, NALED-om i Jedinicom za podršku Koordinacionoj komisiji za inspekcijski nadzor, a uz podršku Evropske banke za obnovu i razvoj..</div>
-
+        <!-- Budi volonter -->
+        <h5 class="second-heading" data-i18n="volunteer-heading1">Budi volonter</h5>
+        <div class="solidarity__item">
+          <p data-i18n="volunteer-content1-1">
+            Solidarnost i empatija prema najugroženijima u toku trajanja pandemije koronavirusa je ključna. Ukoliko ne
+            spadate u rizičnu grupu, mladi ste i zdravi, imate slobodnog vremena i želite da pomognete ugroženim
+            kategorijama stanovništva sada to možete učiniti prijavom na novi jedinstveni sistem za evidenciju
+            volontera i volonterki u Republici Srbiji. U danima pred nama, kada je potrebno da najugroženiji ostanu u
+            svojim domovima kako se ne bi zarazili koronavirusom, pomoć volontera i volonterki je veoma važna.
+          </p>
+          <p>
+            <span data-i18n="volunteer-content1-2">Vlada Republike Srbije je uspostavila nacionalnu platformu za
+              prijavu volontera. Svi građani koji ne spadaju u
+              rizičnu grupu i žele da pomognu našim najstarijim sugrađanima i drugim rizičnim grupama stanovništva, mogu
+              se prijaviti popunjavanjem prijave na sajtu
+            </span>
+            <a href="https://www.budivolonter.gov.rs/" class="text-cta">www.budivolonter.gov.rs</a>
+            <span data-i18n="volunteer-content1-3"> ili besplatnim pozivanjem kontakt centra COVID-19 na broj 19819
+              svakim danom od 08 do 22 časa. Nakon što nadležne službe odobre prijavu, volontere će kontaktirati gradski
+              i opštinski centri sa detaljnim uputstvima i prvim zadacima. Sve podnete prijave zainteresovanih građana
+              koji žele da pomognu i budu volonteri će se proveravati, sa ciljem da se spreči i najmanja zloupotreba.
+              Platforma je realizovana uz podršku Programa Ujedinjenih nacija za razvoj (UNDP).</span>
+          </p>
         </div>
+        <div class="divider"></div>
+        <!-- Doniraj plazmu -->
+        <h5 class="second-heading" data-i18n="volunteer-heading2">Pobedio si COVID-19? Spasi nekome život.</h5>
+        <div class="solidarity__item">
+          <p data-i18n="volunteer-content2-1">
+            Ukoliko ste se oporavili od COVID-19 , u Vašoj plazmi nalaze se
+            dragocena antitela koja je organizam stvorio tokom bolesti, a koja se koriste u lečenju obolelih i
+            dobijaju se doniranjem plazme.
+          </p>
+          <p data-i18n="volunteer-content2-2">Svaka zdrava osoba koja je preležala COVID-19 starosti od 18 do 60
+            godina, sa više od 60 kilograma, bez hroničnih oboljenja (srca, pluća, bubrega i sl.) dijabetesa,
+            autoimunih, malignih i drugih oboljenja. Osoba se može prijaviti za doniranje plazme nakon isteka 21. dana
+            od drugog negativnog rezultata testa.
+          </p>
+          <p><span> data-i18n="volunteer-content2-3">Prijavite putem </span>
+            <a href="https://donirajplazmu.gov.rs/" class="text-cta">donirajplazmu.gov.rs</a>
+            <span data-i18n="volunteer-content2-4"> sajta ili na broj telefona 19819 ili putem mejla
+              itkscovid@nbti.org.rs, kako bismo Vam zakazali treće testiranje. Nakon dodatnih analiza, a ukoliko
+              zadovoljavate kriterijume, možete postati davalac plazme koja će nekome spasiti život.</span>
+          </p>
+        </div>
+        <div class="divider"></div>
+        <!-- Prijavi nezakonite cene -->
+        <h5 class="second-heading" data-i18n="volunteer-heading3">Prijavi nezakonito podizanje cena</h5>
+        <div class="solidarity__item">
+          <p data-i18n="volunteer-content3-1">Koordinaciona komisija za inspekcijski nadzor uvelikko radi. Građani i
+            privreda od danas mogu da prijave nezakonito podizanje cena životnih namirnica, lekova, medicinskih
+            sredstava i zaštitne opreme na broj 011/6350-322 ili putem sajta </p>
+          <a class="text-cta" href="https:\\www.inspektor.gov.rs">www.inspektor.gov.rs</a>
+          <p data-i18n="volunteer-content3-2">Operateri će na raspolaganju biti od 9 do 16 časova, a van radnog
+            vremena moguće je ostaviti prijavu kao govornu poruku.
+            Ovaj kontakt centar pokrenula je Vlada u saradnji sa Ministarstvom državne uprave i lokalne samouprave,
+            Kancelarijom za IT i eUpravu, NALED-om i Jedinicom za podršku Koordinacionoj komisiji za inspekcijski
+            nadzor, a uz podršku Evropske banke za obnovu i razvoj.</p>
+        </div>
+
       </div>
+
 
       <!-- VREME U KUĆI -->
       <div class="icon-content home-time container" id="7">
@@ -1321,12 +1310,12 @@
           <!-- navigacija tabova -->
           <nav>
             <div class="nav nav-tabs home-time-nav" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link home-time-nav__item active" id="nav-home-tab" data-toggle="tab" href="#stress" role="tab"
-                aria-controls="nav-home" aria-selected="true">STRES</a>
-              <a class="nav-item nav-link home-time-nav__item" id="nav-profile-tab" data-toggle="tab" href="#kids" role="tab"
-                aria-controls="nav-profile" aria-selected="false">DECA</a>
-              <a class="nav-item nav-link home-time-nav__item" id="nav-contact-tab" data-toggle="tab" href="#people" role="tab"
-                aria-controls="nav-contact" aria-selected="false">ODRASLI</a>
+              <a class="nav-item nav-link home-time-nav__item active" id="nav-home-tab" data-toggle="tab" href="#stress"
+                role="tab" aria-controls="nav-home" aria-selected="true">STRES</a>
+              <a class="nav-item nav-link home-time-nav__item" id="nav-profile-tab" data-toggle="tab" href="#kids"
+                role="tab" aria-controls="nav-profile" aria-selected="false">DECA</a>
+              <a class="nav-item nav-link home-time-nav__item" id="nav-contact-tab" data-toggle="tab" href="#people"
+                role="tab" aria-controls="nav-contact" aria-selected="false">ODRASLI</a>
             </div>
           </nav>
 
@@ -1367,15 +1356,15 @@
 
 
 
-    <div class="intro-text container py-5 important-text">
+    <div class="intro-text container important-text">
       Dajte svoj doprinos u usporavanju širenja virusa. Čak i ako ste mladi i zdravi, rizik postoji i vaše aktivnosti
       mogu povećati rizik za druge. Ključno je da svako od nas da svoj doprinos za usporavanje širenja koronavirusa.
     </div>
-    <div class="intro-text container py-5 important-text  text-white">
+    <div class="intro-text container important-text  text-white">
       Čuvajte sebe i svoje najbliže ne koristeći neproverene izvore informacija!
     </div>
 
-    <div class="container py-5 important-text">
+    <div class="container important-text">
       <div>MISLITE DA IMATE SIMPTOME?</div>
 
       <div><span>Portal eZdravlje omogućava da popunite </span><a href="https://www.e-zdravlje.gov.rs/landing/"
