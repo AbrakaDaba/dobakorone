@@ -20,8 +20,8 @@ header {
     border-bottom: 1px solid $color2;
     transition: .3s height;
 
-    .container {
-      min-width: 820px;
+    .container-fluid {
+      max-width: 1140px;
       // overflow: hidden;
     }
 
@@ -64,7 +64,8 @@ header {
 
   .icon-btn {
 
-    width: calc(100% / 8);
+    // width: calc(100% / 8);
+    width: 100px;
     float: left;
     background-size: 6rem;
     background-repeat: no-repeat;
@@ -101,7 +102,9 @@ header {
 
 
     &:nth-of-type(1) {
-      width: 8rem;
+      min-width: 7rem;
+      margin-right: 2rem;
+      width: 6rem;
       background-image: url("../../assets/icons/call_doctor.svg");
     }
 
@@ -347,6 +350,9 @@ header {
         bottom: 0;
         font-size: 15px;
       }
+      &:nth-of-type(8) {
+       min-width: 120px;
+      }
     }
   }
   .logo-width{
@@ -372,6 +378,17 @@ header {
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .container-fluid{
+    min-width: auto;
+    .icon-btn{
+      display: block;
+      float: left;
+      min-width: 100px;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 576px) {
   header {

@@ -346,8 +346,47 @@ window.onload = function () {
 
 
         // SCROLL UP BUTTON
+        // LETTERS - LATIN - Start position
+        var letters = "lat";
+        var logo = "./assets/img/logo10wl.png";
+        $('.letter').on("click", (e) => {
+            letters = e.currentTarget.getAttribute("data-locale");
+            if (letters == "cyr") {
+                logo = "./assets/img/logo10w.png";
+                $(".logo_img").attr("src", logo);
+            } else if (letters == "lat") {
+                logo = "./assets/img/logo10wl.png";
+                $(".logo_img").attr("src", logo);
+            } else {
+                logo = "./assets/img/logo10wl.png";
+                $(".logo_img").attr("src", logo);
+            }
+
+        })
+
         function scrollUpButton() {
+
             $(window).scroll(function () {
+                // if(letters == "cyr"){
+                //     logo = "./assets/img/logo10w.png";
+                // }else if(letters == "lat"){
+                //     logo = "./assets/img/logo10wl.png";
+                // }else{
+                //     logo = "./assets/img/logo10wl.png";
+                // }
+
+
+                console.log(letters);
+                if (letters == "cyr") {
+                    logo = "./assets/img/logo10w.png";
+                    $(".logo_img").attr("src", logo);
+                } else if (letters == "lat") {
+                    logo = "./assets/img/logo10wl.png";
+                    $(".logo_img").attr("src", logo);
+                } else {
+                    logo = "./assets/img/logo10wl.png";
+                    $(".logo_img").attr("src", logo);
+                }
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     $(".scroll-up-btn").addClass("flex");
                     $("header").addClass("scroll");
@@ -360,7 +399,7 @@ window.onload = function () {
                     $(".logo_img").css({
                         height: "4.5rem"
                     });
-                    $(".logo_img").attr("src","./assets/img/logo_doba_korone.png");
+                    $(".logo_img").attr("src", "./assets/img/logo_doba_korone.png");
                 } else {
                     $(".scroll-up-btn").removeClass("flex");
                     $("header").removeClass("scroll");
@@ -373,26 +412,13 @@ window.onload = function () {
                     $(".logo_img").css({
                         height: "5rem"
                     });
-                    $(".logo_img").attr("src","./assets/img/logo10wl.png");
+                    $(".logo_img").attr("src", logo);
                 }
             })
         }
         scrollUpButton()
 
-        // Q&A ScrollUp
-        // $("[data-i18n^='question']").on("click", function(el){
-        //     el.target.scroll({
-        //         top:300,
-        //         behavior: 'smooth'
-        //       });
 
-        // })
-
-        function qScrollUp() {
-
-
-            // $(window).scrollTop(position + 5)
-        }
 
 
 

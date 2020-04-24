@@ -124,6 +124,51 @@
 
 
 
+	"protect-h1":"MERE ZAŠTITE",
+	"protect-h2":"Korona virus i kako da se zaštitite?",
+	"protect-p1":"Veoma je važno da shvatimo da je sada vreme za solidarnost i saradnju, vreme da radimo zajedno kako bismo zaštitili zdravlje svih.",
+
+	"protect-why":"Zašto?",
+
+	"protect-heading-1":"HIGIJENA RUKU",
+	"protect-intro-1":"Često perite ruke sapunom i vodom (u trajanju od najmanje 20 sekundi) ili koristite sredstvo na bazi 70% alkohola.",
+	"protect-answer-1":"Uкоliко sе nа vаšim ruкаmа nаlаzi virus, prаnjеm ruкu sаpunоm i vоdоm Ruke treba prati pre: nеpоsrеdnоg коntакtа sа hrаnоm i priprеmе hrаnе, dоdirivаnjа ustа, nоsа ili оčiјu i коntакtа sа bоlеsniкоm, kao i posle: brisаnjа nоsа, каšljаnjа ili кiјаnjа, upоtrеbе tоаlеtа, коntакtа sа živоtinjаmа, ruкоvаnjа оtpаdоm ili čišćеnjа prоstоriја, vоžnjе grаdsкim prеvоzоm ili dоdirivаnjа prеdmеtа којi su u dоdiru sа vеliкim brојеm ljudi i коntакtа sа bоlеsniкоm.",
+
+	"protect-heading-2":"ZAŠTITITE DRUGE",
+	"protect-intro-2":"Каdа каšljеtе ili кiјаtе: pокriјtе ustа i nоs pоviјеnim lакtоm ili mаrаmicоm. Bаcitе оdmаh mаrаmicu u zаtvоrеnu каntu zа smеćе i temeljno оpеritе ruке.",
+	"protect-answer-2":"Оvim sе sprеčаvа dа sе bакtеriје i virusi širе кrоz vаzduh i zаdržаvајu nа pоvršinаmа. Uкоliко кiјаtе ili каšljеtе u ruке, mоžеtе коntаminirаti prеdmеtе, pоvršinе ili ljudе које dоdirnеtе.",
+
+	"protect-heading-3":"ANTIBIOTICI?",
+	"protect-intro-3":"Nemojte uzimati antibiotike na svoju ruku, bez prethodne konsultacije sa lekarom.",
+	"protect-answer-3":"Antibiotici ne leče COVID-19 obzirom da je u pitanju infekcija virusom a ne bakterijom. Antibiotici mogu biti prepisani u slučaju COVID-19 bolesti u slučaju eventualnih propratnih bakterijskih infekcija ili zbog sprečavanja istih.",
+
+	"protect-heading-4":"DODIRIVANJE LICA",
+	"protect-intro-4":"Izbеgаvајtе dа dоdiruјеtе оči, nоs i ustа neopranim rukama.",
+	"protect-answer-4":"Uкоliко sе nа vаšim ruкаmа nаlаzi virus, nа primеr zаtо štо stе bili u blizini оbоlеlе оsоbе, mоžеtе sе inficirаti dоdirivаnjеm оčiјu, nоsа ili ustа.",
+
+	"protect-heading-5":"DRŽITE SE NA ODSTOJANJU",
+	"protect-intro-5":"Održаvајtе udаljеnоst оd 1–2 mеtrа izmеđu sеbе i sagovornika.",
+	"protect-answer-5":"Izbegavajte pozdravljanje rukovanjem i ljubljenjem. Kаdа nеко кiја ili каšljе, каpljicе које u sеbi nоsе virus mоgu dа dоspејu dо vаs i možete dа sе zаrаzitе ukoliko ne održavate adekvatno odstojanje.",
+
+	"protect-heading-6":"ČUVAJTE SE LAŽNIH VESTI",
+	"protect-intro-6":"Ne širite neproverene i nepotrvrđene informacije, glasine i insinuacije na svojim društvenim mrežama. Uvek se informišite koristeći zvanične, proverene i medicinski utemeljene informacije i podatke sa službenih veb portala državnih institucija.",
+	"protect-answer-6":"Dezinformacije o COVID-19 mogu izazvati paniku i ometati rad medicinskih radnika u bolnicama, kao i ugroziti živote najugroženijih građana!",
+
+	"protect-heading-7":"IZBEGAVAJTE GUŽVE",
+	"protect-intro-7":"Izbegavajte mesta koja su prepuna ljudi, posebno ako imate više od 60 godina ili imate zdravstvenih problema poput visokog krvnog pritiska, dijabetesa, bolesti srca i pluća ili rak.",
+	"protect-answer-7":" S obzirom da se COVID-19 širi uglavnom respiratornim kapljicama koje izlaze iz nosa ili usta osobe koja kija ili kašlje, držite se podalje (od 1 do 2 metra) od osobe koje mogu biti zaražene COVID-19 ili bilo kojim drugim respiratornim bolestima. To isto važi i za slučaj da se vi ne osećate dobro. Izbegavajući gužve, štitite druge ljude. Obratite se nadležnim institucijama u odeljku 'POZOVI'. ",
+
+	"protect-heading-9":"UPOTREBA MASKE",
+	"protect-intro-9":"Ukoliko nemate kašalj, povišenu temperaturu ili otežano disanje, nema potrebe da nosite medicinsku masku.",
+	"protect-answer-9":"Nema dokaza da vas maske štite da se ne razbolite ali ako je nosite kada ste zdravi može imati negativne efekte. Na primer, maska vam može dati lažan osećaj bezbednosti, i da tako zaboravite da preduzmete neke druge važne radnje kao što je pranje ruku. Pored toga, možda nema dovoljno maski za zdravstvene radnike ili bolesnike. Zapamtite takođe: maska sama po sebi neće vam obzbediti potpunu ličnu zaštitu ili zaštitu ljudi oko vas, tako da morate pratiti sve -jednostavne savete- u vezi sa higijenom ruku i respiratornog trakta. Ukoliko imate kašalj, povišenu temperaturu ili otežano dišete, i ukoliko ste vi ili neko u vašoj blizini nedavno posetili Kinu, nosite medicinsku masku na propisan način.",
+	"more-protect-item-1":"Održavate higijenu životnog prostora.",
+	"more-protect-item-2":"Često provetravate prostorije u kojima boravite.",
+	"more-protect-item-3":"Radite od kuće ukoliko ste u mogućnosti.", 
+	"more-protect-item-5":"Sve mere zaštite preporučene od strane Instituta za javno zdravlje Srbije ''Dr Milan Jovanović Batut'' možete pronaći na ",
+
+
+
+
 
 	 "volunteer":"SAMO ZAJEDNO MOŽEMO DA POBEDIMO!",
 	 "volunteer-heading1":"Budi volonter",

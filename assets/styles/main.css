@@ -388,7 +388,7 @@ p {
   }
   p {
     font-size: 15px;
-    line-height: 1.7;
+    line-height: 1.5;
     font-family: Open-sans;
   }
 }
@@ -638,8 +638,8 @@ header .icons-bar {
   transition: .3s height;
 }
 
-header .icons-bar .container {
-  min-width: 820px;
+header .icons-bar .container-fluid {
+  max-width: 1140px;
 }
 
 header .icons-bar--top {
@@ -678,7 +678,7 @@ header .icons-bar--top .settings-btn:hover {
 }
 
 header .icon-btn {
-  width: calc(100% / 8);
+  width: 100px;
   float: left;
   background-size: 6rem;
   background-repeat: no-repeat;
@@ -717,7 +717,9 @@ header .icon-btn:hover .icon-btn__text {
 }
 
 header .icon-btn:nth-of-type(1) {
-  width: 8rem;
+  min-width: 7rem;
+  margin-right: 2rem;
+  width: 6rem;
   background-image: url("../../assets/icons/call_doctor.svg");
 }
 
@@ -891,6 +893,9 @@ header.scroll .icon-btn__text {
     bottom: 0;
     font-size: 15px;
   }
+  header .icon-btn:nth-of-type(8) {
+    min-width: 120px;
+  }
   .logo-width {
     min-width: 92px;
   }
@@ -906,6 +911,17 @@ header.scroll .icon-btn__text {
   header .icon-btn__text {
     bottom: 0;
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    min-width: auto;
+  }
+  .container-fluid .icon-btn {
+    display: block;
+    float: left;
+    min-width: 100px;
   }
 }
 
@@ -1504,9 +1520,11 @@ div[class^="protect-"] {
   line-height: 1;
   color: #ffffff;
   padding: 0 1rem 1rem 1rem;
-  top: 0;
+  top: 1rem;
   right: 1rem;
   cursor: pointer;
+  width: 5rem;
+  height: 5rem;
 }
 
 .home-time {

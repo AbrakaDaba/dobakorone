@@ -1,4 +1,4 @@
-$.i18n().locale = "cyr";
+$.i18n().locale = "lat";
 var set_locale_to = function (locale) {
   if (locale)
     $.i18n().locale = "locale";
@@ -41,7 +41,7 @@ jQuery(function () {
         $('body')
         .animate({
           opacity: "1"
-        }, "swing") 
+        }, "swing")
       });
 
       ////////// END --- FOR CUSTOM LAGUAGE SWITCHER:  /////////////
