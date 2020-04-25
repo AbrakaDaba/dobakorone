@@ -1,5 +1,5 @@
 header {
-  border-bottom: 1px solid $color2;
+  // border-bottom: 1px solid $color2;
   font-family: Open-sans;
   background-color: #1f2b44;
   background-image: url(../../assets/img/serbian-flag.svg);
@@ -78,6 +78,7 @@ header {
 
     &__text {
       position: absolute;
+      font-family: 'PT Sans Narrow';
       font-size: 16px;
       bottom: 2px;
       width: 100%;
@@ -87,6 +88,7 @@ header {
       transition: .3s opacity;
       text-transform: lowercase;
       text-transform: capitalize;
+      letter-spacing: 1px;
     }
 
     &:hover {
@@ -373,7 +375,7 @@ header {
     .icon-btn {
       &__text {
         bottom: 0;
-        font-size: 13px;
+        font-size: 14px;
       }
     }
   }

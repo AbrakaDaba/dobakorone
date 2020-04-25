@@ -364,7 +364,7 @@ window.onload = function () {
 
         })
 
-        function scrollUpButton() {
+        function scrollHeader() {
 
             $(window).scroll(function () {
                 // if(letters == "cyr"){
@@ -416,9 +416,12 @@ window.onload = function () {
                 }
             })
         }
-        scrollUpButton()
+        scrollHeader()
 
-
+        $(".scroll-up-btn").click(scrollUpButton);
+        function scrollUpButton() {
+            $(window).scrollTop(0)
+        }
 
 
 

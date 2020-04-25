@@ -75,7 +75,7 @@ $black: #000000;
         display: none;
     }
     p{
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
 }
 
@@ -134,7 +134,7 @@ $black: #000000;
 
 .answer {
     padding: 1.5rem 1rem 0 1rem;
-    font-family: Montserrat;
+    // font-family: Montserrat;
     font-size: 1.8rem;
     color: $light2;
     // p{
@@ -201,5 +201,7 @@ $black: #000000;
     .question .btn{
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        padding-left: 7rem;
+        font-size: 2.1rem;
     }
 }
