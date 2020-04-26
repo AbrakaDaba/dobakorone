@@ -387,7 +387,7 @@ window.onload = function () {
                     logo = "./assets/img/logo10wl.png";
                     $(".logo_img").attr("src", logo);
                 }
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
                     $(".scroll-up-btn").addClass("flex");
                     $("header").addClass("scroll");
                     $(".icons-contents").css({
@@ -456,5 +456,10 @@ window.onload = function () {
         opacity: "1",
         background: "linear-gradient(to right, #282828ba, #cfcfcf21, #cfcfcf21, #282828ba)"
     }, "slow")
+
+$(".logo_img").on("click", function(){
+    window.location.reload(true);
+})
+
 
 }

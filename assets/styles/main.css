@@ -21,6 +21,10 @@
   color: #3ee00d;
 }
 
+.text-grey {
+  color: #C7C7C7;
+}
+
 .text-cta {
   color: #3ee00d;
 }
@@ -782,7 +786,7 @@ header.scroll .icon-btn__text {
   content: "";
   position: absolute;
   height: 1px;
-  width: 60%;
+  width: 75%;
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#3ee00d), to(transparent));
   background-image: linear-gradient(90deg, transparent, #3ee00d, transparent);
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#e3ffb5), to(transparent));
@@ -1536,7 +1540,7 @@ div[class^="protect-"] {
   border-bottom: solid 1px #3ee00d;
 }
 
-.solidarity__item:last-of-type {
+.solidarity .faq-wrapper {
   margin-bottom: 5rem;
 }
 
