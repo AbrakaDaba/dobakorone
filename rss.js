@@ -64,13 +64,13 @@ $(document).ready(function(){
 
 
 
-  var x=21; // your X iteration limit
+  var x=25; // your X iteration limit
 
   // load the xml data. it is parsed by jquery
   $.get("https://insajder.net/sr/feed/", function(data) {
       var $xml = $(data);
 
-         var patt= /koron|policijski čas|vanredno stanje|vanrednog stanja|policijsskog časa|policijskom času|vanrednom stanju|epidemij/gi;
+         var patt= /Kisić Tepavčević:|Kon:|Stevanović:|kretanja|mask|koron|koronavirusom|policijski čas|vanredno stanje|vanrednog stanja|policijskog časa|policijskom času|vanrednom stanju|epidemij/gi;
 
 
       $xml.find("item").each(function(i, val) { // find the items in the rss and loop
@@ -93,7 +93,7 @@ $(document).ready(function(){
             $('#feed').append($('<li class="dot my-4"><p><a class="text-white" href="' +item.guid +'">' +item.title +'</a><span class="text-cta"> &#187;</span></p></li>'));
 
           }else{
-            return;
+            // return;
             // content = false;
           }
           // console.log(content);

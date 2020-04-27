@@ -1,5 +1,4 @@
 #quote-wrapper {
-    top: 150px;
     top: 20px;
     left: -252px;
     display: none;
@@ -17,7 +16,7 @@
     cursor: pointer;
     z-index: 1;
     &:hover{
-        top: 150px;
+        top: 160px;
         left: 0;
     }
 }
@@ -106,14 +105,14 @@
     #quote-wrapper {
         display: block;
         float: left;
-        width: 350px;
-        height: 310px;
+        width: 390px;
+        height: 330px;
         background-size: cover;
-        padding: 10px 20px 10px 30px;
+        padding: 0px 20px 10px 30px;
     }
 
     .quote__content {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .quote__author {

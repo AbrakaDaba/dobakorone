@@ -779,7 +779,15 @@ header.scroll .icon-btn__text {
 }
 
 .icons-contents-bg__1:before {
-  background-image: url(../../assets/img/stethoscope.png), url(../../assets/img/serbia.png);
+  background-image: url(../../assets/img/serbia.png);
+}
+
+.icons-contents-bg__2:before {
+  background-image: url(../../assets/icons/virus.svg);
+}
+
+.icons-contents-bg__3:before {
+  background-image: url(../../assets/img/stethoscope.png);
 }
 
 .icons-contents:after {
@@ -912,7 +920,6 @@ header.scroll .icon-btn__text {
 }
 
 #quote-wrapper {
-  top: 150px;
   top: 20px;
   left: -252px;
   display: none;
@@ -936,7 +943,7 @@ header.scroll .icon-btn__text {
 }
 
 #quote-wrapper:hover {
-  top: 150px;
+  top: 160px;
   left: 0;
 }
 
@@ -995,13 +1002,13 @@ header.scroll .icon-btn__text {
   #quote-wrapper {
     display: block;
     float: left;
-    width: 350px;
-    height: 310px;
+    width: 390px;
+    height: 330px;
     background-size: cover;
-    padding: 10px 20px 10px 30px;
+    padding: 0px 20px 10px 30px;
   }
   .quote__content {
-    font-size: 17px;
+    font-size: 16px;
   }
   .quote__author {
     font-size: 14px;

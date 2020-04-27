@@ -236,7 +236,13 @@ header {
   }
 
   &-bg__1:before {
-    background-image: url(../../assets/img/stethoscope.png), url(../../assets/img/serbia.png);
+    background-image: url(../../assets/img/serbia.png);
+  }
+  &-bg__2:before {
+    background-image: url(../../assets/icons/virus.svg);
+  }
+  &-bg__3:before {
+    background-image: url(../../assets/img/stethoscope.png);
   }
   &:after {
     content: "";
