@@ -1,6 +1,6 @@
 .solidarity {
 
-    .faq-wrapper { 
+    .faq-wrapper {
             margin-bottom: 5rem;
     }
 
@@ -8,6 +8,30 @@
 
         p {
             margin: 2.5rem 0;
+        }
+    }
+    .question{
+        .btn{
+            background: $color3;
+            .plus-minus{
+                background: $color3;
+                background-image: url(../../assets/icons/ico_minus_red.svg);
+            }
+            &.collapsed {
+                background: linear-gradient(90deg, transparent, #e3ffb51f, transparent);
+                color: $colorw;
+                border: solid 1px rgba(181, 184, 183, 0.4);
+
+
+                .plus-minus {
+                    background-image: url(../../assets/icons/ico_plus__red.svg);
+                    @extend .b-ground;
+                }
+
+                &:hover {
+                    border: 1px solid $color3;
+                }
+            }
         }
     }
 }

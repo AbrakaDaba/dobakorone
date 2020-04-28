@@ -1,7 +1,7 @@
 #quote-wrapper {
     top: 20px;
     left: -252px;
-    display: none;
+    // display: none;
     margin: 6rem auto;
     position: absolute;
     width: 100vw;
@@ -66,7 +66,8 @@
     padding: 0;
     text-align: center;
     font-style: italic;
-    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+    // text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+    // display: inline;
 
     &:before {
         content: "";
@@ -117,6 +118,6 @@
 
     .quote__author {
         font-size: 14px;
-        bottom: 28%;
+        bottom: 24%;
     }
 }

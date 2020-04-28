@@ -414,7 +414,6 @@ body * {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background-color: #172031f7;
 }
 
 .roto-loader {
@@ -639,13 +638,11 @@ header .icons-bar--top .settings-btn {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 3rem;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 header .icons-bar--top .settings-btn:hover {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 header .icon-btn {
@@ -922,7 +919,6 @@ header.scroll .icon-btn__text {
 #quote-wrapper {
   top: 20px;
   left: -252px;
-  display: none;
   margin: 6rem auto;
   position: absolute;
   width: 100vw;
@@ -973,7 +969,6 @@ header.scroll .icon-btn__text {
   padding: 0;
   text-align: center;
   font-style: italic;
-  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .quote__content:before {
@@ -1012,7 +1007,7 @@ header.scroll .icon-btn__text {
   }
   .quote__author {
     font-size: 14px;
-    bottom: 28%;
+    bottom: 24%;
   }
 }
 
@@ -1139,7 +1134,7 @@ header.scroll .icon-btn__text {
   }
 }
 
-.b-ground, .question .btn .plus-minus, .question .btn.collapsed .plus-minus {
+.b-ground, .question .btn .plus-minus, .question .btn.collapsed .plus-minus, .solidarity .question .btn.collapsed .plus-minus {
   background-repeat: no-repeat;
 }
 
@@ -1553,6 +1548,30 @@ div[class^="protect-"] {
 
 .solidarity__item p {
   margin: 2.5rem 0;
+}
+
+.solidarity .question .btn {
+  background: #ff4455;
+}
+
+.solidarity .question .btn .plus-minus {
+  background: #ff4455;
+  background-image: url(../../assets/icons/ico_minus_red.svg);
+}
+
+.solidarity .question .btn.collapsed {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#e3ffb51f), to(transparent));
+  background: linear-gradient(90deg, transparent, #e3ffb51f, transparent);
+  color: #f3f3f3;
+  border: solid 1px rgba(181, 184, 183, 0.4);
+}
+
+.solidarity .question .btn.collapsed .plus-minus {
+  background-image: url(../../assets/icons/ico_plus__red.svg);
+}
+
+.solidarity .question .btn.collapsed:hover {
+  border: 1px solid #ff4455;
 }
 
 /* Themes */

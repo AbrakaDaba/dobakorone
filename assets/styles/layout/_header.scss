@@ -50,10 +50,9 @@ header {
         background-image: url(../../assets/icons/settings.svg);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 3rem;
-        transform: rotate(90deg);
+        background-size: 3rem; 
         &:hover{
-          transform: rotate(-90deg);
+          transform: rotate(180deg);
         }
       }
     }
