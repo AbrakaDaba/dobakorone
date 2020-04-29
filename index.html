@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
-
+  <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
   <script src="./jquery-3.4.1.min.js"></script>
@@ -106,14 +106,18 @@
     <header class="header">
       <!-- TOP BAR -->
       <div class="icons-bar icons-bar--top">
-        <div class="container d-flex justify-content-between align-items-center h-100">
-          <a class="glow-on-hover navbar-brand mr-0 logo-width" href="#"><img src="./assets/img/logo10wl.png"
-              alt="Doba_Korone_logo" class="logo_img"></a>
-          <ul class="switch-locale text-center">
-            <li class="alert-colors"><span data-i18n="alert-message-1">#SutraMožeBitiKasno</span></li>
-            <li class="alert-colors"><span data-i18n="alert-message-2">#OstaniKodKuće</span></li>
-          </ul>
-          <div class="settings-btn"></div>
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-12 d-flex justify-content-between align-items-center h-100">
+              <a class="glow-on-hover navbar-brand mr-0 logo-width" href="#"><img src="./assets/img/logo10wl.png"
+                  alt="Doba_Korone_logo" class="logo_img"></a>
+              <ul class="switch-locale text-center">
+                <li class="alert-colors"><span data-i18n="alert-message-1">#SutraMožeBitiKasno</span></li>
+                <li class="alert-colors"><span data-i18n="alert-message-2">#OstaniKodKuće</span></li>
+              </ul>
+              <div class="settings-btn"></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -470,7 +474,8 @@
                   <a href="https://media.covid19.rs/2020/03/SVI-DOMOVI-ZDRAVLJA-Telefoni.pdf" target="blank"
                     class="d-flex justify-content-between align-items-center px-4 contacts__item__anch w-100 h-100">
                     <div class="contacts__item__heading" data-i18n="belgrade-text">
-                      Ova stranica je namenjena osobama iz Beograda kojima je potrebna pomoć ili dostava namirnica i lekova
+                      Ova stranica je namenjena osobama iz Beograda kojima je potrebna pomoć ili dostava namirnica i
+                      lekova
                     </div>
                     <span class="contacts__item__num">&rsaquo;&rsaquo;&rsaquo;</span>
                   </a>
@@ -497,25 +502,31 @@
           <div class="faq-wrapper">
             <h2 class="main-heading">COVID-19</h2>
             <h5 class="second-heading" data-i18n="Chronology">Hronologija</h5>
-            <div class="mt-4 mb-5">
-              <p class="dot dot--y my-3" data-i18n="Chronology-1">31. decembra 2019. godine, SZO je dobila informacije o
-                izbijanju epidemije
-                upale pluća nepoznatog porekla u gradu Vuhanu, u Kini.</p>
-              <p class="dot dot--y my-3" data-i18n="Chronology-2">7. januara 2020. godine Kineske vlasti su
-                identifikovale
-                novi
-                koronavirus.</p>
-              <p class="dot dot--y my-3" data-i18n="Chronology-3">30. januara 2020. godine, generalni direktor SZO je
-                proglasio
-                ovu epidemiju za
-                javno zdravstvenu pretnju od međunarodnog značaja (PHEIC) s obzirom na visok stepen kontagioznosti koji
-                dovodi do eksponencijalnog povećanja broja obolelih.</p>
-              <p class="dot dot--y my-3" data-i18n="Chronology-4">11. februara virus je nazvan SARS-CoV-2, a bolest
-                izazvana ovim
-                virusom
-                nazvana je Koronavirus 2019 ili COVID-19.</p>
+            <div class="row">
+
+
+              <div class="mb-5 col-12">
+                <p class="dot dot--y my-3" data-i18n="Chronology-1">31. decembra 2019. godine, SZO je dobila informacije
+                  o
+                  izbijanju epidemije
+                  upale pluća nepoznatog porekla u gradu Vuhanu, u Kini.</p>
+                <p class="dot dot--y my-3" data-i18n="Chronology-2">7. januara 2020. godine Kineske vlasti su
+                  identifikovale
+                  novi
+                  koronavirus.</p>
+                <p class="dot dot--y my-3" data-i18n="Chronology-3">30. januara 2020. godine, generalni direktor SZO je
+                  proglasio
+                  ovu epidemiju za
+                  javno zdravstvenu pretnju od međunarodnog značaja (PHEIC) s obzirom na visok stepen kontagioznosti
+                  koji
+                  dovodi do eksponencijalnog povećanja broja obolelih.</p>
+                <p class="dot dot--y my-3" data-i18n="Chronology-4">11. februara virus je nazvan SARS-CoV-2, a bolest
+                  izazvana ovim
+                  virusom
+                  nazvana je Koronavirus 2019 ili COVID-19.</p>
+              </div>
             </div>
-            <div class="faq-accordion row  mx-n5" id="faq-accordion">
+            <div class="faq-accordion row" id="faq-accordion">
 
 
 
@@ -1068,7 +1079,7 @@
                       LICA</h3>
                     <div class="protect__content" data-i18n="protect-intro-4">Izbеgаvајtе dа dоdiruјеtе оči, nоs i ustа
                       neopranim rukama.</div>
-                    <h5 class="protect__why">Zašto?</h5>
+                    <h5 class="protect__why" data-i18n="protect-why">Zašto?</h5>
                     <div class="protect__answer" data-i18n="protect-answer-4">Uкоliко sе nа vаšim ruкаmа nаlаzi virus,
                       nа primеr zаtо štо stе bili u
                       blizini оbоlеlе оsоbе, mоžеtе sе inficirаti dоdirivаnjеm оčiјu, nоsа ili ustа.</div>
@@ -1175,89 +1186,196 @@
       </div>
 
       <!-- STATISTIKA -->
-      <div class="icon-content container" id="3">
-        <h2 class="main-heading">STATISTIČKI PODACI</h2>
-        <div class="contacts_group">
+      <div class="icon-content" id="3">
+        <div class="container icons-contents-bg icons-contents-bg__4 ">
+          <h2 class="main-heading">STATISTIČKI PODACI</h2>
+          <div class="contacts_group">
 
-          <h5 class="second-heading">O dostupnim podacima</h5>
-          <div class="container">
-            <p>
+            <h5 class="second-heading">O dostupnim podacima</h5>
+            <div class="container">
+              <p>
 
-              O dostupnim podacima:
-              Potvrđeni slučajevi nisu svi postojeći slučajevi, već uključuju samo ljude koji su testirani i potvrđeni
-              pozitivno.
-              Ovi se podaci brzo menjaju, mogu biti zastareli i možda ne odražavaju slučajeve za koje se još čeka
-              izveštavanje.
-              Podaci o slučajevima, pravila i dostupnost ispitivanja razlikuju se od zemlje do zemlje. Zašto vidim
-              različite podatke iz različitih izvora?
-              Postoje različiti izvori koji prate i objedinjuju podatke o koronavirusu. Ažuriraju se u različito vreme i
-              mogu imati različite načine prikupljanja podataka.
-            </p>
+                O dostupnim podacima:
+                Potvrđeni slučajevi nisu svi postojeći slučajevi, već uključuju samo ljude koji su testirani i potvrđeni
+                pozitivno.
+                Ovi se podaci brzo menjaju, mogu biti zastareli i možda ne odražavaju slučajeve za koje se još čeka
+                izveštavanje.
+                Podaci o slučajevima, pravila i dostupnost ispitivanja razlikuju se od zemlje do zemlje. Zašto vidim
+                različite podatke iz različitih izvora?
+                Postoje različiti izvori koji prate i objedinjuju podatke o koronavirusu. Ažuriraju se u različito vreme
+                i
+                mogu imati različite načine prikupljanja podataka.
+              </p>
+            </div>
+
           </div>
-
         </div>
       </div>
 
       <!-- PRIVREDA -->
-      <div class="icon-content container" id="4">
-        <div>
+      <div class="icon-content economy" id="4">
+        <div class="container icons-contents-bg icons-contents-bg__5 ">
 
-          <h2 class="main-heading">Privreda</h2>
-          <div class="protect-item">Svеtsка zdrаvstvеnа оrgаnizаciја (SZО) је dоbilа infоrmаciје о izbiјаnju еpidеmiје
-            upаlе plućа nеpоznаtоg pоrекlа u grаdu Vuhаnu, u Кini, 31. dеcеmbrа 2019. gоdinе. Кinеsке vlаsti su
-            idеntifiкоvаlе nоvi коrоnаvirus 7. јаnuаrа 2020. gоdinе i virus је privrеmеnо nаzvаn 2019-nCoV, dа bi 11.
-            fеbruаrа bоlеst izаzvаnа оvim virusоm nаzvаnа Коrоnаvirus 2019, ili COVID-19. Gеnеrаlni dirекtоr SZО је
-            prоglаsiо оvu еpidеmiјu zа jаvnоzdrаvstvеnu prеtnju оd mеđunаrоdnоg znаčаја (Public Health Emergency of
-            International Concern) 30. јаnuаrа 2020. gоdinе. Pоslеdnjе pоdаtке о еpidеmiоlоšкој situаciјi u vеzi
-            COVID-19 mоžеtе pоglеdаti оvdе http://www.batut.org.rs/index.php?content=2026</div>
+          <h2 class="main-heading" data-i18n="economy-heading1">PRIVREDA</h2>
+          <div class="row">
+            <div class="col-12 mb-5">
+              <h5 class="second-heading" data-i18n="economy-heading2">Ekonomske mere i podrška privredi</h5>
+              <p data-i18n="economy-text1">Vlada Republike Srbije donela je Program ekonomskih mera podrške privredi,
+                koji je formiran na osnovu
+                međunarodnog iskustva (usvojenih mera u razvijenim ekonomijama i zemljama u okruženju), preporuka
+                Međunarodnog monetarnog fonda i Evropske komisije, kao i predloženih mera domaćih poslovnih asocijacija.
+              </p>
 
-          <h5 class="second-heading">Štа znаči „nоvi коrоnаvirus”?</h5>
-          <div class="protect-item">Коrоnаvirusi (CoV) prеdstаvljајu vеliкu pоrоdicu virusа којi izаzivајu bоlеsti
-            које
-            sе кrеću u оpsеgu оd оbičnе prеhlаdе dо оzbiljnih оbоljеnjа као štо su: Blisкоistоčni rеspirаtоrni sindrоm
-            (Middle East Respiratory Syndrome - MERS-CoV) i Tеšкi акutni rеspirаtоrni sindrоm (Severe Acute
-            Respiratory
-            Syndrome - SARS-CoV). COVID-19 је оbоljеnjе izаzvаnо nоvim коrоnаvirusоm.</div>
+              <p data-i18n="economy-text2">Pravni okvir za sprovođenje Programa ekonomskih mera predstavlja Uredba o
+                fiskalnim pogodnostima i direktnim davanjima privrednim subjektima u privatnom sektoru i novčanoj pomoći
+                građanima radi ublažavanja ekonomskih posledica nastalih usled pandemije COVID-19. </p>
 
-          <h5 class="second-heading">Pоrекlо virusа</h5>
-          <div class="protect-item">Prе nеgо štо је prеšао nа ljudе, оvај virus је nајvеrоvаtniје pоtекао оd
-            živоtinjа.
-            Mnоgi rаni slučајеvi zаrаzе nоvim коrоnа virusоm pоvеzаni su sа оtvоrеnоm piјаcоm živih i mrtvih divljih i
-            dоmаćih živоtinjа u Vuhаnu u Кini.</div>
+              <p data-i18n="economy-text3">Uredbom se uređuju fiskalne pogodnosti i direktna davanja iz budžeta
+                Republike Srbije privrednim subjektima u privatnom sektoru radi ublažavanja ekonomskih posledica zbog
+                širenja virusa COVID-19. </p>
 
-          <h5 class="second-heading">Како sе mоžеmо zаrаziti nоvim коrоnаvirusоm?</h5>
-          <div class="protect-item">Mоgući putеvi prеnоšеnjа nоvоg коrоnаvirusа su:
+              <p data-i18n="economy-text4">Program podrazumeva efikasnu primenu fiskalnih mera bez suvišnih procedura,
+                kako bi pomoć pravovremeno stigla onima kojima je najpotrebnija. Mere su privremenog karaktera, kako u
+                pogledu direktnih plaćanja, tako i odlaganja, odnosno umanjenja određenih poreskih obaveza. </p>
+            </div>
+          </div>
 
-            Dirекtnim коntакtоm sа zаrаžеnоm оsоbоm
-            Mеđu оsоbаmа које su u blisкоm коntакtu nа udаljеnоsti mаnjој оd 2 m.
-            Prеко каpljicа iz disајnih оrgаnа које nаstајu pri кiјаnju, каšljаnju ili disаnju.
-            Indirекtnо, коntакtоm sа rаzličitim prеdmеtimа ili pоvršinаmа nа којimа virus mоžе dа prеživi vеоmа кrаtак
-            pеriоd
+          <div class="economy__items row">
+            <h5 class="col-12 second-heading" data-i18n="economy-heading3">Program ekonomskih mera:</h5>
+            <!-- economy-item 1-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item1">Uredba o fiskalnim pogodnostima
+                    i direktnim davanjima privrednim subjektima u privatnom sektoru i novčanoj pomoći građanima (član
+                    15) u cilju ublažavanja ekonomskih posledica nastalih usled bolesti COVID-19</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.pravno-informacioni-sistem.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="http://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/vlada/uredba/2020/54/2">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 2-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item2">Uputstvo za primenu Uredbe o fiskalnim pogodnostima i direktnim davanjima
+                    privrednim subjektima u privatnom sektoru (PDF)</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.pks.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="https://api.pks.rs/storage/assets/Uputstvo%20za%20primenu%20uredbe%20WEB.pdf">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 3-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item3">COVID 19 - info centar za privredu (najnovija dešavanja, preporuke i
+                    mere)</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.pks.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="https://pks.rs/strana/covid-19-info-servis-za-privredu">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 4-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item4">Najnoviji stručni dokumenti, analize, stručni komentari, službena
+                    mišljenja, modeli u vezi sa vanrednim stanjem i bolešću COVID-19</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.paragraf.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="https://www.paragraf.rs/pravni-strucni-komentari-propisi-vanredno-stanje.html">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 5-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item5">Podrška za održavanje likvidnosti i obrtna sredstva</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.pks.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="https://pks.rs/strana/sekcija/program-ekonomskih-mera-podrska-za-odrzavanje-likvidnosti-i-obrtna-sredstva">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 6-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item6">Prеpоruке zа pоslоdаvcе i zаpоslеnе u vezi sa prevencijom infekcije novim
+                    korona virusom</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.batut.org.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="http://www.batut.org.rs/index.php?content=2040">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 7-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item7">Najnoviji PROPISI Republike Srbije vezani za sprečavanje širenja bolesti
+                    - COVID-19</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.paragraf.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="https://www.paragraf.rs/svi-propisi-uputstva-za-sprecavanje-sirenja-korona-virusa-covid-19.html">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 8-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item8">Zastoj u otplati obaveza (moratorijum)</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.nbs.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="https://www.nbs.rs/internet/cirilica/scripts/showContent.html?id=15321&konverzija=no">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 9-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item9">Pregled mera i aktivnosti Narodne banke Srbije s ciljem podrške građanima
+                    i ekonomiji u uslovima pandemije korona virusa.</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.nbs.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="https://www.nbs.rs/internet/cirilica/15/Covid19/index.html">&#8667;</a>
+              </div>
+            </div>
+            <!-- economy-item 10-->
+            <div class="col-12 col-xl-6 mb-5">
+              <div class="economy__item d-flex justify-content-between align-items-center h-100">
+                <div class="economy__item__heading p-4 h-100 d-flex flex-column justify-content-between">
+                  <p data-i18n="economy-item10">Sve propise i druge akte o korona virusu covid 19 možete pratiti na
+                    portalu Pravno informacioni sistem</p>
+                  <em class="text-right text-white-50"><small data-i18n="economy-source">IZVOR:
+                    </small>&#160;<small>www.pravno-informacioni-sistem.rs</small></em>
+                </div>
+                <a target="_blank" class="text-cta economy__item__link p-4 h-100 d-flex align-items-center"
+                  href="http://www.pravno-informacioni-sistem.rs/fp/covid19">&#8667;</a>
+              </div>
+            </div>
 
+            <div class="col-12 text-center source-info">
 
-            Оsоbа sе mоžе zаrаziti nоvim коrоnаvirusоm dоdirivаnjеm pоvršinа ili prеdmеtа svеžе коntаminirаnim
-            sекrеtimа
-            disајnih оrgаnа inficirаnе оsоbе, nа којimа sе nаlаzi virus, а pоtоm dоdirivаnjа ustа, nоsа, оčiјu.
-
-            Ljudi којi primајu pоšiljке iz pоdručја u којimа је rеgistrоvаnо оbоlеvаnjе оd nоvоg коrоnа virusа nisu u
-            riziкu оd infекciје. Pеriоd inкubаciје оvоg оbоljеnjа (vrеmе оd nаstаnка infекciје dо pојаvе prvih
-            simptоmа
-            bоlеsti), nа оsnоvu trеnutnih infоrmаciја, mоžе biti dо 14 dаnа.</div>
-
-          <h5 class="second-heading">Tеžinа оbоljеnjа</h5>
-          <div class="protect-item">Коd vеćinе оsоbа које su zаrаžеnе оvim virusоm rаzviја sе blаgо rеspirаtоrnо
-            оbоljеnjе, dок sе u 15% slučајеvа rаzviја tеšка fоrmа bоlеsti sа коmpliкаciјаmа као štо su upаlа plućа,
-            rеspirаtоrnа insufiјеnciја i u nекim slučајеvimа smrtni ishоd.
-
-            Nајnоviјi pоdаci uкаzuјu nа tо dа smrtnоst pоvеzаnа sа оvim virusоm iznоsi 2%.</div>
-
-          <div>Zа bližе infоrmаciје коntакtirајtе: Ministаrstvо zdrаvljа 064 8945 235</div>
-          <div>Ažurirano 10.03.2020. godine.Institut zа јаvnо zdrаvljе Srbiје „Dr Milаn Јоvаnоvić Bаtut” 011 2684 566
-            i
-            060 0180244 ili institutе/zаvоdе zа јаvnо zdrаvljе nа tеritоriјi nа којој bоrаvitе čiје коntакt
-            infоrmаciје
-            mоžеtе prоnаći оvdе http://www.batut.org.rs/index.php?content=2026</div>
-
+            </div>
+          </div>
 
         </div>
       </div>
@@ -1265,21 +1383,78 @@
       <!-- PROPISI -->
       <div class="icon-content  container regulations" id="5">
 
-        <div>
-          <h2 class="main-heading">PROPISI I DRUGI AKTI </h2>
-          <h5 class="second-heading">Tamo vamo ovo ono hah</h5>
-          <div class="regulations__item">Sve propise, odluke, uredbe, zaključke i ostale akte možete pronaći <a
-              href="http://www.pravno-informacioni-sistem.rs/fp/covid19">OVDE</a></div>
-          <div class="regulations__item">
-            <span class="date">15.03.2020.</span>
-            <p>Proglašava se vanredno stanje na teritoriji Republike Srbije.</p>
-          </div>
-          <div class="regulations__item">Pitanja iz nadležnosti MUP-a građani mogu poslati na imejl
-            infokoronavirus@mup.gov.rs ili se informisati na broj telefona 011/2741-580.</div>
-          <div class="regulations__item"></div>
-          <div class="regulations__item"></div>
-          <div class="regulations__item"></div>
+        <div class="row">
+          <div class="col-12 mb-5">
+            <h2 class="main-heading" data-i18n="regulations-0-1">PROPISI I UVEDENE MERE</h2>
 
+            <p class="regulations__intro"><span data-i18n="regulations-0-2">Uredbu o svim merama za vreme vanrednog stanja možete pronaći na sajtu</span> &nbsp;<a
+                class="text-cta"
+                href="http://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/vlada/uredba/2020/31/1/reg" data-i18n="regulations-0-3">Pravno Informacionog sistema Repubike Srbije</a>.</p>
+
+            <p class="regulations__intro"><span data-i18n="regulations-0-4">Pitanja iz nadležnosti MUP-a građani mogu poslati na imejl
+              infokoronavirus@mup.gov.rs ili se informisati na broj telefona</span> <a href="tel:+381112741580" class="text-cta">011/2741-580</a>.</p>
+
+
+
+          </div>
+          <div class="col-12">
+            <h5 class="second-heading" data-i18n="regulations-0-5">Najvažnije poslednje uvedene mere</h5>
+          </div>
+
+          <!-- Regulation item -->
+          <div class="col-12">
+            <div class="regulations__item p-4 p-xl-5">
+              <img src="../../assets/icons/megaphone.svg" alt="megaphone-img" class="megaphone-img">
+              <p data-i18n="regulations-1-1">Zabrana kretanja za sve građane važi od 18 časova do 5 časova
+                ujutru. </p>
+              <p data-i18n="regulations-1-2">Zabrana kretanja za prvomajske praznike trajaće od četvrtka,
+                30. aprila, u 18 časova, do ponedeljka, 4. maja, u 5 časova ujutru.</p>
+              <p data-i18n="regulations-1-3">Građani stariji od 65 godina moći će, počevši od ponedeljka,
+                27. aprila, svakoga dana da izlaze u šetnju u trajanju od sat vremena, u periodu između 18 časova i 1
+                čas posle ponoći, najviše šest stotina metara od mesta stanovanja. </p>
+              <p><span data-i18n="regulations-1-4">Prodavnice će za najstarije sugrađane biti otvorene u četvrtak
+                  od 4 do 7 časova ujutru. Spisak prodavnica i apoteka koje će raditi od 4 do 7 časova ujutru javno je
+                  dostupan na sajtu</span> <a class="text-cta"
+                  href="https://www.srbija.gov.rs/vest/453120/objavljen-spisak-prodavnica-koje-ce-raditi-petkom-od-4-do-7-casova.php"  data-i18n="regulations-1-4-2">Vlade
+                  Republike Srbije</a>.</p>
+              <p data-i18n="regulations-1-5">Napuštanje domova za vreme trajanja zabrane kretanja, moguće je
+                isključivo iz hitnih medicinskih razloga, uz radnu dozvolu ili posebno odobrenje nadležnih organa.
+              </p>
+              <p>- <a class="text-cta" href="https://euprava.gov.rs/dozvolakretanja"
+                  data-i18n="regulations-1-6">Zahtev</a>
+                <span data-i18n="regulations-1-7"> za kretanje lica za vreme zabrane kretanja</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Regulation item -->
+          <div class="col-12">
+            <div class="regulations__item p-4 p-xl-5">
+              <img src="../../assets/icons/megaphone.svg" alt="megaphone-img" class="megaphone-img">
+              <p data-i18n="regulations-2-1">Vlasnici kućnih ljubimaca imaju dozvolu da u rasponu od 200 metara od svog
+                mesta stanovanja prošetaju kućne ljubimce od 23 časa do jedan čas posle ponoći. </p>
+              <p data-i18n="regulations-2-2">Subotom i nedeljom, ljubimce mogu izvoditi od 8 do 10 časova ujutru.</p>
+              <p data-i18n="regulations-2-3">Zabranjuje se boravak u svim parkovima i javnim povrsinama namenjenim za
+                rekreaciju i sport.</p>
+              <p data-i18n="regulations-2-4">Zabranjuje se okupljanje više od 2 osobe.</p>
+            </div>
+          </div>
+
+          <!-- Regulation item -->
+          <div class="col-12">
+            <div class="regulations__item p-4 p-xl-5">
+              <img src="../../assets/icons/megaphone.svg" alt="megaphone-img" class="megaphone-img">
+              <p data-i18n="regulations-3-1">Deci sa autizmom i drugim smetnjama u razvoju i njihovim roditeljima biće
+                dozvoljeno kretanje u vreme policijskog časa, svakog dana od 18 do 20 časova.</p>
+            </div>
+          </div>
+
+          <div class="col-12 text-center source-info">
+            <small><span data-i18n="regulations-source-1">Sve informacije na ovoj strani preuzete su sa </span><a
+                class="text-cta" href="https://chats.viber.com/covid19info">VIBER - COVID-19 Info Srbija</a><span
+                data-i18n="regulations-source-2">, zvanični info servis Vlade Srbije povodom informacija, novosti, ali i
+                odgovora na pitanja povodom COVID-19.</span></small>
+          </div>
 
         </div>
       </div>
@@ -1304,34 +1479,46 @@
                 data-parent="#faq-accordion2">
                 <div class="answer">
                   <p data-i18n="volunteer-content1-1">
-                    Solidarnost i empatija prema najugroženijima u toku trajanja pandemije koronavirusa je ključna.
+                    Solidarnost i empatija prema najugroženijima u toku trajanja pandemije koronavirusa je
+                    ključna.
                     Ukoliko
                     ne
-                    spadate u rizičnu grupu, mladi ste i zdravi, imate slobodnog vremena i želite da pomognete ugroženim
-                    kategorijama stanovništva sada to možete učiniti prijavom na novi jedinstveni sistem za evidenciju
-                    volontera i volonterki u Republici Srbiji. U danima pred nama, kada je potrebno da najugroženiji
+                    spadate u rizičnu grupu, mladi ste i zdravi, imate slobodnog vremena i želite da
+                    pomognete ugroženim
+                    kategorijama stanovništva sada to možete učiniti prijavom na novi jedinstveni sistem
+                    za evidenciju
+                    volontera i volonterki u Republici Srbiji. U danima pred nama, kada je potrebno da
+                    najugroženiji
                     ostanu
                     u
-                    svojim domovima kako se ne bi zarazili koronavirusom, pomoć volontera i volonterki je veoma važna.
+                    svojim domovima kako se ne bi zarazili koronavirusom, pomoć volontera i volonterki je
+                    veoma važna.
                   </p>
                   <p>
-                    <span data-i18n="volunteer-content1-2">Vlada Republike Srbije je uspostavila nacionalnu platformu za
+                    <span data-i18n="volunteer-content1-2">Vlada Republike Srbije je uspostavila
+                      nacionalnu platformu za
                       prijavu volontera. Svi građani koji ne spadaju u
-                      rizičnu grupu i žele da pomognu našim najstarijim sugrađanima i drugim rizičnim grupama
+                      rizičnu grupu i žele da pomognu našim najstarijim sugrađanima i drugim rizičnim
+                      grupama
                       stanovništva,
                       mogu
                       se prijaviti popunjavanjem prijave na sajtu
                     </span>
                     <a href="https://www.budivolonter.gov.rs/" class="text-cta">www.budivolonter.gov.rs</a>
-                    <span data-i18n="volunteer-content1-3"> ili besplatnim pozivanjem kontakt centra COVID-19 na broj
+                    <span data-i18n="volunteer-content1-3"> ili besplatnim pozivanjem kontakt centra
+                      COVID-19 na broj
                       19819
-                      svakim danom od 08 do 22 časa. Nakon što nadležne službe odobre prijavu, volontere će kontaktirati
+                      svakim danom od 08 do 22 časa. Nakon što nadležne službe odobre prijavu, volontere
+                      će kontaktirati
                       gradski
-                      i opštinski centri sa detaljnim uputstvima i prvim zadacima. Sve podnete prijave zainteresovanih
+                      i opštinski centri sa detaljnim uputstvima i prvim zadacima. Sve podnete prijave
+                      zainteresovanih
                       građana
-                      koji žele da pomognu i budu volonteri će se proveravati, sa ciljem da se spreči i najmanja
+                      koji žele da pomognu i budu volonteri će se proveravati, sa ciljem da se spreči i
+                      najmanja
                       zloupotreba.
-                      Platforma je realizovana uz podršku Programa Ujedinjenih nacija za razvoj (UNDP).</span>
+                      Platforma je realizovana uz podršku Programa Ujedinjenih nacija za razvoj
+                      (UNDP).</span>
                   </p>
                 </div>
               </div>
@@ -1350,20 +1537,27 @@
                 <div class="answer">
                   <p data-i18n="volunteer-content2-1">
                     Ukoliko ste se oporavili od COVID-19 , u Vašoj plazmi nalaze se
-                    dragocena antitela koja je organizam stvorio tokom bolesti, a koja se koriste u lečenju obolelih i
+                    dragocena antitela koja je organizam stvorio tokom bolesti, a koja se koriste u
+                    lečenju obolelih i
                     dobijaju se doniranjem plazme.
                   </p>
-                  <p data-i18n="volunteer-content2-2">Svaka zdrava osoba koja je preležala COVID-19 starosti od 18 do 60
-                    godina, sa više od 60 kilograma, bez hroničnih oboljenja (srca, pluća, bubrega i sl.) dijabetesa,
-                    autoimunih, malignih i drugih oboljenja. Osoba se može prijaviti za doniranje plazme nakon isteka
+                  <p data-i18n="volunteer-content2-2">Svaka zdrava osoba koja je preležala COVID-19
+                    starosti od 18 do 60
+                    godina, sa više od 60 kilograma, bez hroničnih oboljenja (srca, pluća, bubrega i sl.)
+                    dijabetesa,
+                    autoimunih, malignih i drugih oboljenja. Osoba se može prijaviti za doniranje plazme
+                    nakon isteka
                     21. dana
                     od drugog negativnog rezultata testa.
                   </p>
                   <p><span data-i18n="volunteer-content2-3">Prijavite se putem </span>
                     <a href="https://donirajplazmu.gov.rs/" class="text-cta">donirajplazmu.gov.rs</a>
-                    <span data-i18n="volunteer-content2-4"> sajta ili na broj telefona 19819 ili putem mejla
-                      itkscovid@nbti.org.rs, kako bismo Vam zakazali treće testiranje. Nakon dodatnih analiza, a ukoliko
-                      zadovoljavate kriterijume, možete postati davalac plazme koja će nekome spasiti život.</span>
+                    <span data-i18n="volunteer-content2-4"> sajta ili na broj telefona 19819 ili putem
+                      mejla
+                      itkscovid@nbti.org.rs, kako bismo Vam zakazali treće testiranje. Nakon dodatnih
+                      analiza, a ukoliko
+                      zadovoljavate kriterijume, možete postati davalac plazme koja će nekome spasiti
+                      život.</span>
                   </p>
                 </div>
               </div>
@@ -1380,16 +1574,21 @@
               <div id="collapseThird" class="collapse answer-wrapper" aria-labelledby="headingThird"
                 data-parent="#faq-accordion2">
                 <div class="answer">
-                  <p data-i18n="volunteer-content3-1">Koordinaciona komisija za inspekcijski nadzor uvelikko radi.
+                  <p data-i18n="volunteer-content3-1">Koordinaciona komisija za inspekcijski nadzor
+                    uvelikko radi.
                     Građani i
-                    privreda od danas mogu da prijave nezakonito podizanje cena životnih namirnica, lekova, medicinskih
+                    privreda od danas mogu da prijave nezakonito podizanje cena životnih namirnica,
+                    lekova, medicinskih
                     sredstava i zaštitne opreme na broj 011/6350-322 ili putem sajta </p>
                   <a class="text-cta" href="https:\\www.inspektor.gov.rs">www.inspektor.gov.rs</a>
-                  <p data-i18n="volunteer-content3-2">Operateri će na raspolaganju biti od 9 do 16 časova, a van radnog
+                  <p data-i18n="volunteer-content3-2">Operateri će na raspolaganju biti od 9 do 16 časova,
+                    a van radnog
                     vremena moguće je ostaviti prijavu kao govornu poruku.
-                    Ovaj kontakt centar pokrenula je Vlada u saradnji sa Ministarstvom državne uprave i lokalne
+                    Ovaj kontakt centar pokrenula je Vlada u saradnji sa Ministarstvom državne uprave i
+                    lokalne
                     samouprave,
-                    Kancelarijom za IT i eUpravu, NALED-om i Jedinicom za podršku Koordinacionoj komisiji za
+                    Kancelarijom za IT i eUpravu, NALED-om i Jedinicom za podršku Koordinacionoj komisiji
+                    za
                     inspekcijski
                     nadzor, a uz podršku Evropske banke za obnovu i razvoj.</p>
                 </div>
@@ -1407,9 +1606,18 @@
               <div id="collapseFourth" class="collapse answer-wrapper" aria-labelledby="headingFourth"
                 data-parent="#faq-accordion2">
                 <div class="answer">
-                  <p><a class="text-cta" href="https://www.digitalnasolidarnost.gov.rs/">www.digitalnasolidarnost.gov.rs </a> <span data-i18n="volunteer-content4-1">je portal namenjen svima koji su usled pandemije koronavirusa u svojim kućama.</span></p>
-                  <p data-i18n="volunteer-content4-2">Na njemu su objavljene sve informacije o besplatnim platformama za učenje na daljinu, rad od kuće, besplatnim onlajn knjigama, kursevima, filmovima, muzici, televizijskom sadržaju za vreme pandemije COVID-19.</p>
-                  <p data-i18n="volunteer-content4-3">Solidarnost i odgovornost su ključne i samo zajedno možemo postati bolje i odgovornije društvo.</p>
+                  <p><a class="text-cta" href="https://www.digitalnasolidarnost.gov.rs/">www.digitalnasolidarnost.gov.rs
+                    </a> <span data-i18n="volunteer-content4-1">je portal namenjen svima koji su usled
+                      pandemije
+                      koronavirusa u svojim kućama.</span></p>
+                  <p data-i18n="volunteer-content4-2">Na njemu su objavljene sve informacije o besplatnim
+                    platformama za
+                    učenje na daljinu, rad od kuće, besplatnim onlajn knjigama, kursevima, filmovima,
+                    muzici,
+                    televizijskom sadržaju za vreme pandemije COVID-19.</p>
+                  <p data-i18n="volunteer-content4-3">Solidarnost i odgovornost su ključne i samo zajedno
+                    možemo postati
+                    bolje i odgovornije društvo.</p>
                   <p data-i18n="volunteer-content4-4">I zato #OstaniKodKuće!</p>
                 </div>
               </div>
@@ -1426,7 +1634,11 @@
               <div id="collapseFifth" class="collapse answer-wrapper" aria-labelledby="headingFifth"
                 data-parent="#faq-accordion2">
                 <div class="answer">
-                   <p data-i18n="volunteer-content5-1">Svi koju žele da upute humanitarnu pomoć ili imaju pitanja u vezi sa potrebama za upućivanje pomoći, mogu se obratiti na ironfriendship@gov.rs i telefone +381 64 8350 478 i +381 11 292 7499.</p>
+                  <p data-i18n="volunteer-content5-1">Svi koju žele da upute humanitarnu pomoć ili imaju
+                    pitanja u vezi
+                    sa potrebama za upućivanje pomoći, mogu se obratiti na ironfriendship@gov.rs i
+                    telefone +381 64 8350
+                    478 i +381 11 292 7499.</p>
                 </div>
               </div>
             </div>
@@ -1440,7 +1652,8 @@
       <div class="icon-content home-time container" id="7">
         <div>
           <h2 class="main-heading">VREME U KUĆI</h2>
-          <h5 class="second-heading">Kako da oplemenite život u kući dok traju posebne mere zaštite od COVID-19</h5>
+          <h5 class="second-heading">Kako da oplemenite život u kući dok traju posebne mere zaštite od
+            COVID-19</h5>
 
           <!-- navigacija tabova -->
           <nav>
@@ -1469,9 +1682,7 @@
 
         </div>
       </div>
-
     </div>
-
 
     <!-- QUOTE OF THE DAY -->
     <div id="quote-wrapper" title="Citat">
@@ -1491,29 +1702,36 @@
     <!-- RSS FEED - INSAJDER.NET -->
     <div class="container my-5">
       <div class="main-heading mb-3">POSLEDNJE VESTI</div>
-      <p class="text-grey small mb-5 text-center">(naslovi vesti su preuzeti sa www.insajder.net i trenutno je moguća samo latinična
+      <p class="text-grey small mb-5 text-center">(naslovi vesti su preuzeti sa www.insajder.net i
+        trenutno je moguća
+        samo latinična
         verzija; za kompletnu vest kliknite na naslov)</p>
       <ul id="feed">
       </ul>
     </div>
     <div class="divider"></div>
 
-    <!-- MESSAGES -->
+    <!-- MESSAGE -->
     <div class="intro-text container important-text">
-      Dajte svoj doprinos u usporavanju širenja virusa. Čak i ako ste mladi i zdravi, rizik postoji i vaše aktivnosti
-      mogu povećati rizik za druge. Ključno je da svako od nas da svoj doprinos za usporavanje širenja koronavirusa.
+      Dajte svoj doprinos u usporavanju širenja virusa. Čak i ako ste mladi i zdravi, rizik postoji i vaše
+      aktivnosti
+      mogu povećati rizik za druge. Ključno je da svako od nas da svoj doprinos za usporavanje širenja
+      koronavirusa.
     </div>
 
+    <!-- MESSAGE -->
     <div class="intro-text container important-text  text-white">
       Čuvajte sebe i svoje najbliže ne koristeći neproverene izvore informacija!
     </div>
 
+    <!-- MESSAGE -->
     <div class="container important-text">
       <div>MISLITE DA IMATE SIMPTOME?</div>
       <div><span>Portal eZdravlje omogućava da popunite </span><a href="https://www.e-zdravlje.gov.rs/landing/"
           class="text-cta">TEST SAMOPROCENE</a><span>
           na infekciju koronavirusom. Za sva pitanja prvo kontaktirajte nadležni dom zdravlja.</span> <a
-          href="https://media.covid19.rs/2020/03/SVI-DOMOVI-ZDRAVLJA-Telefoni.pdf" class="text-cta"> OVDE </a> <span>se
+          href="https://media.covid19.rs/2020/03/SVI-DOMOVI-ZDRAVLJA-Telefoni.pdf" class="text-cta"> OVDE
+        </a> <span>se
           nalaze brojevi telefona svih domova zdravlja.</span>
       </div>
 
@@ -1539,44 +1757,47 @@
 
       </div>
     </div>
-  </div>
 
 
 
 
 
 
-  <footer>
 
-    <div class="intro-text text-white container py-5">
-      U želji da dam svoj doprinos i olakšam borbu protiv novog korona virusa napravih stranicu "Doba Korone" sa idejom
-      da ljudi mogu jednim klikom doći do svih najvažnijih informacija. Informacije objavljene na ovoj stranici potiču
-      iz javno dostupnih izvora podataka.
-    </div>
-    <div class="intro-text text-white container py-5">
-      Special thanks for Icon set to <a href="https://dribbble.com/Justicon">Just Icon</a>
-      Special thanks for Icons set to <a href="https://www.iconfinder.com/p/coronavirus-awareness-icons">Just Icon</a>
-      <div>Informacije objavljene na ovoj stranici potiču iz javno dostupnih izvora podataka. Ne odgovaramo za
-        tačnost i istinitost dokumenata ili greške koje se mogu javiti prilikom preuzimanja istih.</div>
-    </div>
+    <footer>
 
-  </footer>
+      <div class="intro-text text-white container py-5">
+        U želji da dam svoj doprinos i olakšam borbu protiv novog korona virusa napravih stranicu "Doba
+        Korone" sa idejom
+        da ljudi mogu jednim klikom doći do svih najvažnijih informacija. Informacije objavljene na ovoj
+        stranici potiču
+        iz javno dostupnih izvora podataka.
+      </div>
+      <div class="intro-text text-white container py-5">
+        Special thanks for Icon set to <a href="https://dribbble.com/Justicon">Just Icon</a>
+        Special thanks for Icons set to <a href="https://www.iconfinder.com/p/coronavirus-awareness-icons">Just Icon</a>
+        <div>Informacije objavljene na ovoj stranici potiču iz javno dostupnih izvora podataka. Ne
+          odgovaramo za
+          tačnost i istinitost dokumenata ili greške koje se mogu javiti prilikom preuzimanja istih.</div>
+      </div>
 
-  <a href="#" class="scroll-up-btn"></a>
+    </footer>
 
-  <script src="./main3.js"></script>
+    <a href="#" class="scroll-up-btn"></a>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <script src="./main3.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"> -->
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-  <!-- <script src="./rss.js"></script>  -->
-  <script src="./quotes.js"></script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="./rss.js"></script>
+    <script src="./quotes.js"></script>
 </body>
 
 </html>

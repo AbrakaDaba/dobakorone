@@ -316,32 +316,32 @@ window.onload = function () {
         }
         // $.when(getLocation).then(getData);
 
-        // let localAjax = $.ajax({
-        //     url: 'https://thevirustracker.com/free-api?countryTotal=RS',
-        //     // dataType: 'json',
-        //     success: function (res) {
-        //         res = res.countrydata[0];
-        //         console.log(res);
-        //         makingLocalTable(res);
-        //     }
-        // });
+        let localAjax = $.ajax({
+            url: 'https://thevirustracker.com/free-api?countryTotal=RS',
+            // dataType: 'json',
+            success: function (res) {
+                res = res.countrydata[0];
+                console.log(res);
+                makingLocalTable(res);
+            }
+        });
 
-        // function getLocation() {
-        //     console.log('buljaa');
+        function getLocation() {
+            console.log('buljaa');
 
-        //     $.ajax({
-        //         url: 'https://ipinfo.io/178.148.88.3/json?token=6a2a0f17aafb13',
-        //         dataType: 'json',
-        //         success: function (resLocation) {
-        //             console.log(resLocation.country);
-        //             makingLocalTable(res);
-        //         }
-        //     });
-        // }
+            $.ajax({
+                url: 'https://ipinfo.io/178.148.88.3/json?token=6a2a0f17aafb13',
+                dataType: 'json',
+                success: function (resLocation) {
+                    console.log(resLocation.country);
+                    makingLocalTable(res);
+                }
+            });
+        }
 
         function getData() {
-            // $.when(totalAjax).then(localAjax);
-            // $.when(totalAjax).then(console.log("oujea"));
+            $.when(totalAjax).then(localAjax);
+            $.when(totalAjax).then(console.log("oujea"));
         }
 
 
