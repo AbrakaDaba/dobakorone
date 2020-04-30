@@ -19,6 +19,7 @@ header {
     overflow-x: auto;
     border-bottom: 1px solid $color2;
     transition: .3s height;
+    box-shadow: 0px 1px 20px #00071c;
 
     .container-fluid {
       max-width: 1140px;

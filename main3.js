@@ -91,8 +91,10 @@ window.onload = function () {
                 $("#" + theIc).css({
                     opacity: 1
                 })
-                $("#" + theIc).slideDown("fast")
-                $("#" + theIc).show("fast");
+                // $("#" + theIc).slideDown("fast")
+                $("#" + theIc).slideDown("slow")
+                // $("#" + theIc).show("fast");
+                $("#" + theIc).show("slow");
             }
 
             // IF SOME ICON IS OPENED AND SOME OTHER IS CLICKED
@@ -125,7 +127,8 @@ window.onload = function () {
                 })
                 $(el.target).removeClass("active_icon");
 
-                $("#" + theIc).slideUp("fast");
+                // $("#" + theIc).slideUp("fast");
+                $("#" + theIc).slideUp("slow");
 
                 $(icons_contents).each(function () {
                     $(this).css({
@@ -454,7 +457,7 @@ window.onload = function () {
     })()
     $("body").animate({
         opacity: "1",
-        background: "linear-gradient(to right, #282828ba, #cfcfcf21, #cfcfcf21, #282828ba)"
+        background: "#1E2637"
     }, "slow")
 
 $(".logo_img").on("click", function(){
