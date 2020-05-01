@@ -20,7 +20,7 @@
 
             &.active {
                 border-bottom: 1px solid $colorbg;
-                background: none;
+                background: $colorbg;
                 color: $white;
 
                 &:hover {
@@ -42,20 +42,21 @@
         border-bottom-left-radius: .7rem;
         border-bottom-right-radius: .7rem;
         border-top: 1px solid #1E2637;
-        // position: relative;
-        // top: -1px;
-        // z-index: -1;
+        background-color: $colorbg;
     }
 
     &__link {
         border: 1px solid rgba(181, 184, 183, 0.4);
         border-radius: .7rem;
+        background-color: rgba(255,255,255,0.05);
+        box-shadow: 0px 1px 20px #00071cbd;
         p{
+            margin-right: 1rem;
             & span:not(:first-child){
                 text-align: justify;
             }
         }
-        a {
+        a.text-decoration-none {
             font-size: 4rem;
             min-width: 7rem;
             height: 7rem;

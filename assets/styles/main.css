@@ -31,6 +31,7 @@
 
 .text-cta {
   color: #3ee00d;
+  white-space: nowrap;
 }
 
 .text-cta:hover {
@@ -351,7 +352,7 @@
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   font-family: Open-sans;
 }
@@ -613,8 +614,8 @@ header .icons-bar {
   border-bottom: 1px solid #68645a;
   -webkit-transition: .3s height;
   transition: .3s height;
-  -webkit-box-shadow: 0px 1px 20px #00071c;
-          box-shadow: 0px 1px 20px #00071c;
+  -webkit-box-shadow: 0px 1px 20px #00071cbd;
+          box-shadow: 0px 1px 20px #00071cbd;
 }
 
 header .icons-bar .container-fluid {
@@ -772,28 +773,60 @@ header.scroll .icon-btn__text {
 .icons-contents-bg:before {
   content: "";
   position: absolute;
-  top: 2%;
   height: 100vw;
-  left: 2%;
-  right: 2%;
-  opacity: 0.15;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: contain;
+  opacity: 0.25;
   background-repeat: no-repeat;
-  background-size: 20vw auto;
-  background-position: right top;
-  background-image: url(../../assets/img/serbia.png);
+  z-index: -1;
+}
+
+.icons-contents-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100vw;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(32%, #1E2637));
+  background-image: linear-gradient(transparent 0%, #1E2637 32%);
   z-index: -1;
 }
 
 .icons-contents-bg__1:before {
-  background-image: url(../../assets/img/serbia.png);
+  background-image: url(../../assets/img/photo-call.jpg);
+  top: -23vw;
 }
 
 .icons-contents-bg__2:before {
-  background-image: url(../../assets/icons/virus.svg);
+  background-image: url(../../assets/img/photo-corona.jpg);
 }
 
 .icons-contents-bg__3:before {
-  background-image: url(../../assets/img/stethoscope.png);
+  background-image: url(../../assets/img/photo-protection.jpg);
+}
+
+.icons-contents-bg__4:before {
+  background-image: url(../../assets/img/photo-statistics.jpg);
+}
+
+.icons-contents-bg__5:before {
+  background-image: url(../../assets/img/photo-economy2.jpg);
+}
+
+.icons-contents-bg__6:before {
+  background-image: url(../../assets/img/photo-regulations.jpg);
+}
+
+.icons-contents-bg__7:before {
+  background-image: url(../../assets/img/photo-solidarity2.jpg);
+}
+
+.icons-contents-bg__8:before {
+  background-image: url(../../assets/img/photo-home3.jpg);
 }
 
 .icons-contents:after {
@@ -927,15 +960,12 @@ header.scroll .icon-btn__text {
 
 #quote-wrapper {
   font-size: 1px;
-  top: 20px;
-  left: -252px;
-  top: 200px;
-  left: 20px;
+  top: -4rem;
+  left: 1rem;
   position: absolute;
-  width: 100vw;
-  height: 90vw;
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 68px;
+  padding: 0px 20px 10px 30px;
   background-image: url(../../assets/icons/bubble.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -951,6 +981,28 @@ header.scroll .icon-btn__text {
   z-index: 1;
 }
 
+#quote-wrapper:hover {
+  width: 390px;
+  height: 354px;
+}
+
+#quote-wrapper:hover .quote__content {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 1;
+  color: #515151;
+  font-size: 17px;
+}
+
+#quote-wrapper:hover .quote__author {
+  opacity: 1;
+  color: #515151;
+  font-size: 14px;
+  bottom: 24%;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
 .quote {
   position: relative;
   width: 100%;
@@ -964,20 +1016,22 @@ header.scroll .icon-btn__text {
   height: 85%;
   float: left;
   shape-outside: polygon(0 0, 98% 0, 50% 6%, 23.4% 17.3%, 6% 32.6%, 0 50%, 6% 65.6%, 23.4% 82.7%, 50% 94%, 98% 100%, 0 100%);
-  shape-margin: 5%;
+  shape-margin: 6%;
 }
 
 .quote__content {
-  display: none;
   font-family: patrick-hand;
   font-size: 1px;
   line-height: 1.3;
   color: transparent;
   height: 100%;
+  opacity: 0;
   line-height: 1.25;
   padding: 0;
   text-align: center;
   font-style: italic;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 
 .quote__content:before {
@@ -986,36 +1040,29 @@ header.scroll .icon-btn__text {
   height: 85%;
   float: right;
   shape-outside: polygon(2% 0%, 100% 0%, 100% 100%, 2% 100%, 50% 94%, 76.6% 82.7%, 94% 65.6%, 100% 50%, 94% 32.6%, 76.6% 17.3%, 50% 6%);
-  shape-margin: 5%;
+  shape-margin: 6%;
 }
 
 .quote__author {
-  display: none;
+  opacity: 0;
   font-family: patrick-hand;
   width: 100%;
   position: absolute;
-  bottom: 20vw;
-  font-size: 4vw;
+  bottom: 25%;
+  padding-right: 2rem;
+  font-size: 0;
   text-align: center;
   font-weight: bold;
   color: #8f8f8f;
   line-height: 1.1;
   font-style: italic;
+  -webkit-transition: .15s ease-in;
+  transition: .15s ease-in;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #quote-wrapper:hover {
-    padding: 2.5vw 10vw 1vw 12vw;
-    width: 390px;
-    height: 330px;
-    padding: 0px 20px 10px 30px;
-  }
-  #quote-wrapper:hover .quote__content {
-    font-size: 16px;
-  }
-  #quote-wrapper:hover .quote__author {
-    font-size: 14px;
-    bottom: 24%;
+    display: none;
   }
 }
 
@@ -1539,7 +1586,7 @@ div[class^="protect-"] {
 
 .home-time .home-time-nav__item.active {
   border-bottom: 1px solid #1E2637;
-  background: none;
+  background: #1E2637;
   color: #ffffff;
 }
 
@@ -1559,18 +1606,26 @@ div[class^="protect-"] {
   border-bottom-left-radius: .7rem;
   border-bottom-right-radius: .7rem;
   border-top: 1px solid #1E2637;
+  background-color: #1E2637;
 }
 
 .home-time__link {
   border: 1px solid rgba(181, 184, 183, 0.4);
   border-radius: .7rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-box-shadow: 0px 1px 20px #00071cbd;
+          box-shadow: 0px 1px 20px #00071cbd;
+}
+
+.home-time__link p {
+  margin-right: 1rem;
 }
 
 .home-time__link p span:not(:first-child) {
   text-align: justify;
 }
 
-.home-time__link a {
+.home-time__link a.text-decoration-none {
   font-size: 4rem;
   min-width: 7rem;
   height: 7rem;
@@ -1593,21 +1648,21 @@ div[class^="protect-"] {
   transition: ease-in-out .2s;
 }
 
-.home-time__link a .hover {
+.home-time__link a.text-decoration-none .hover {
   display: none;
 }
 
-.home-time__link a:hover {
+.home-time__link a.text-decoration-none:hover {
   font-size: 5rem;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.home-time__link a:hover .hover {
+.home-time__link a.text-decoration-none:hover .hover {
   display: block;
 }
 
-.home-time__link a:hover .normal {
+.home-time__link a.text-decoration-none:hover .normal {
   display: none;
 }
 

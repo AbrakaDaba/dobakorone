@@ -15,6 +15,7 @@
 
 .text-cta {
     color: $color1;
+    white-space: nowrap;
 
     &:hover {
         color: $color1;

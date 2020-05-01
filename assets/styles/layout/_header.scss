@@ -19,7 +19,7 @@ header {
     overflow-x: auto;
     border-bottom: 1px solid $color2;
     transition: .3s height;
-    box-shadow: 0px 1px 20px #00071c;
+    box-shadow: 0px 1px 20px #00071cbd;
 
     .container-fluid {
       max-width: 1140px;
@@ -52,7 +52,8 @@ header {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 3rem;
-        &:hover{
+
+        &:hover {
           transform: rotate(180deg);
         }
       }
@@ -221,29 +222,64 @@ header {
   &-bg:before {
     content: "";
     position: absolute;
-    top: 2%;
     height: 100vw;
-    left: 2%;
-    right: 2%;
-    opacity: 0.15;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: contain;
+    opacity: 0.25;
     background-repeat: no-repeat;
-    background-size: 20vw auto;
-    background-position: right top;
-    background-image: url(../../assets/img/serbia.png);
-    // background-color: linear-gradient(to right, transparent, black, black, transparent);
     ;
     z-index: -1;
   }
+  &-bg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100vw;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent 0%, #1E2637 32%);
+    z-index: -1;
+    ;
+  }
 
   &-bg__1:before {
-    background-image: url(../../assets/img/serbia.png);
+    background-image: url(../../assets/img/photo-call.jpg);
+    top: -23vw;
+
   }
+
   &-bg__2:before {
-    background-image: url(../../assets/icons/virus.svg);
+    background-image: url(../../assets/img/photo-corona.jpg);
   }
+
   &-bg__3:before {
-    background-image: url(../../assets/img/stethoscope.png);
+    background-image: url(../../assets/img/photo-protection.jpg);
+
   }
+  &-bg__4:before {
+    background-image: url(../../assets/img/photo-statistics.jpg);
+
+  }
+  &-bg__5:before {
+    background-image: url(../../assets/img/photo-economy2.jpg);
+
+  }
+  &-bg__6:before {
+    background-image: url(../../assets/img/photo-regulations.jpg);
+
+  }
+  &-bg__7:before {
+    background-image: url(../../assets/img/photo-solidarity2.jpg);
+
+  }
+  &-bg__8:before {
+    background-image: url(../../assets/img/photo-home3.jpg);
+
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -254,39 +290,20 @@ header {
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
-}
+  }
 }
 
 .icon-content {
-  // margin-top: -100%;
-  // height: 0;
   z-index: 1;
   width: 100%;
   display: none;
-  // left: -100%;
   color: $light2;
-  // transition: max-height .35s, opacity .35s;
   transition: opacity .35s ease-in-out;
   overflow: hidden;
   position: absolute;
-  // &:before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 2%;
-  //   height: 100vw;
-  //   left: 2%;
-  //   right: 2%;
-  //   opacity: 0.15;
-  //   background-repeat: no-repeat;
-  //   background-size: 100px auto, 20vw auto;
-  //   background-position: left top, right top;
-  //   background-image: url(../../assets/img/stethoscope.png), url(../../assets/img/sebia.png);
-  //   // background-color: linear-gradient(to right, transparent, black, black, transparent);
-  //   ;
-  //   z-index: -1;
-  // }
 }
-.logo-width{
+
+.logo-width {
   min-width: 100px;
 
 }
@@ -348,6 +365,20 @@ header {
 
 
 @media only screen and (max-width: 1200px) {
+
+  // .icons-contents {
+  //   &-bg__2:before {
+  //     background-size: 50vw auto;
+  //     right: -20vw;
+  //     top: - 20vw;
+  //   }
+
+  //   &-bg__3:before {
+  //     right: calc((100% - 920px) / 2);
+  //     top: 10px;
+  //   }
+  // }
+
   header {
     .icons-bar--top .container {
       min-width: 0;
@@ -358,21 +389,32 @@ header {
         bottom: 0;
         font-size: 15px;
       }
+
       &:nth-of-type(8) {
-       min-width: 120px;
+        min-width: 120px;
       }
     }
   }
-  .logo-width{
+
+  .logo-width {
     min-width: 92px;
 
   }
+
   .alert-colors {
     font-size: 1.9rem;
   }
 }
 
 @media only screen and (max-width: 1040px) {
+  // .icons-contents {
+  //   &-bg__3:before {
+  //     background-size: 200px;
+  //     right: calc((100% - 670px) / 2);
+  //     top: 80px;
+  //   }
+  // }
+
   header {
     .icons-bar--top .container {
       min-width: 0;
@@ -386,10 +428,21 @@ header {
     }
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .container-fluid{
+
+  // .icons-contents {
+  //   &-bg__3:before {
+  //     background-size: 190px;
+  //     right: calc((100% - 510px) / 2);
+  //     top: 46px;
+  //   }
+  // }
+
+  .container-fluid {
     min-width: auto;
-    .icon-btn{
+
+    .icon-btn {
       display: block;
       float: left;
       min-width: 100px;
@@ -399,6 +452,16 @@ header {
 
 
 @media only screen and (max-width: 576px) {
+  // .icons-contents {
+  //   &-bg__3:before {
+  //     background-size: 120px;
+  //     // right: calc(50% - 60px);
+  //     right: auto;
+  //     left: 15px;
+  //     top: 5px;
+  //   }
+  // }
+
   header {
     .icons-bar--top .container {
       min-width: 0;
@@ -411,7 +474,8 @@ header {
       }
     }
   }
-  .logo-width{
+
+  .logo-width {
     min-width: 68px;
   }
 }
