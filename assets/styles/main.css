@@ -960,7 +960,7 @@ header.scroll .icon-btn__text {
 
 #quote-wrapper {
   font-size: 1px;
-  top: -4rem;
+  top: -5rem;
   left: 1rem;
   position: absolute;
   width: 75px;
@@ -1061,7 +1061,7 @@ header.scroll .icon-btn__text {
 }
 
 @media only screen and (max-width: 768px) {
-  #quote-wrapper:hover {
+  #quote-wrapper {
     display: none;
   }
 }
