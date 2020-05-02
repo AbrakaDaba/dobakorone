@@ -232,6 +232,7 @@ header {
     ;
     z-index: -1;
   }
+
   &-bg:after {
     content: "";
     position: absolute;
@@ -259,22 +260,27 @@ header {
     background-image: url(../../assets/img/photo-protection.jpg);
 
   }
+
   &-bg__4:before {
     background-image: url(../../assets/img/photo-statistics.jpg);
 
   }
+
   &-bg__5:before {
     background-image: url(../../assets/img/photo-economy2.jpg);
 
   }
+
   &-bg__6:before {
     background-image: url(../../assets/img/photo-regulations.jpg);
 
   }
+
   &-bg__7:before {
     background-image: url(../../assets/img/photo-solidarity2.jpg);
 
   }
+
   &-bg__8:before {
     background-image: url(../../assets/img/photo-home3.jpg);
 
@@ -407,13 +413,6 @@ header {
 }
 
 @media only screen and (max-width: 1040px) {
-  // .icons-contents {
-  //   &-bg__3:before {
-  //     background-size: 200px;
-  //     right: calc((100% - 670px) / 2);
-  //     top: 80px;
-  //   }
-  // }
 
   header {
     .icons-bar--top .container {
@@ -431,13 +430,19 @@ header {
 
 @media only screen and (max-width: 768px) {
 
-  // .icons-contents {
-  //   &-bg__3:before {
-  //     background-size: 190px;
-  //     right: calc((100% - 510px) / 2);
-  //     top: 46px;
-  //   }
-  // }
+  .icons-contents {
+    &-bg:before {
+      opacity: .4;
+    }
+
+    &-bg__1:before {
+      top: 0;
+    }
+
+    &-bg:after {
+      background-image: linear-gradient(transparent 0%, #1E2637 47%);
+    }
+  }
 
   .container-fluid {
     min-width: auto;
@@ -451,16 +456,7 @@ header {
 }
 
 
-@media only screen and (max-width: 576px) {
-  // .icons-contents {
-  //   &-bg__3:before {
-  //     background-size: 120px;
-  //     // right: calc(50% - 60px);
-  //     right: auto;
-  //     left: 15px;
-  //     top: 5px;
-  //   }
-  // }
+@media only screen and (max-width: 576px) { 
 
   header {
     .icons-bar--top .container {

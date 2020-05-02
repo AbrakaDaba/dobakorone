@@ -44,6 +44,12 @@ window.onload = function () {
                     maxHeight: "auto"
                 })
             })
+            $(".home-time-nav__item").on("click", function () {
+                $(".icons-contents").css({
+                    height: "auto",
+                    maxHeight: "auto"
+                })
+            })
 
 
 
@@ -95,6 +101,7 @@ window.onload = function () {
                 $("#" + theIc).slideDown("slow")
                 // $("#" + theIc).show("fast");
                 $("#" + theIc).show("slow");
+                $("#quote-wrapper").hide("slow");
             }
 
             // IF SOME ICON IS OPENED AND SOME OTHER IS CLICKED
@@ -135,6 +142,7 @@ window.onload = function () {
                         transition: "max-height .35s,  opacity .35s"
                     })
                 })
+                $("#quote-wrapper").show("slow");
             }
         }
 

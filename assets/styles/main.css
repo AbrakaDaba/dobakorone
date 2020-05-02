@@ -305,6 +305,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Depo';
+  src: url("../../assets/fonts/Deepo.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .test {
   font-family: 'Abel';
   font-family: 'Open-sans';
@@ -935,6 +942,16 @@ header.scroll .icon-btn__text {
 }
 
 @media only screen and (max-width: 768px) {
+  .icons-contents-bg:before {
+    opacity: .4;
+  }
+  .icons-contents-bg__1:before {
+    top: 0;
+  }
+  .icons-contents-bg:after {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(47%, #1E2637));
+    background-image: linear-gradient(transparent 0%, #1E2637 47%);
+  }
   .container-fluid {
     min-width: auto;
   }
@@ -1641,15 +1658,21 @@ div[class^="protect-"] {
       -ms-flex-align: center;
           align-items: center;
   font-family: sans-serif;
-  padding-bottom: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#e3ffb51f), to(transparent));
   background: linear-gradient(90deg, transparent, #e3ffb51f, transparent);
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
 }
 
+.home-time__link a.text-decoration-none .normal {
+  line-height: 1.7rem;
+  height: 2rem;
+}
+
 .home-time__link a.text-decoration-none .hover {
   display: none;
+  line-height: 1.2rem;
+  height: 2rem;
 }
 
 .home-time__link a.text-decoration-none:hover {
@@ -1664,6 +1687,24 @@ div[class^="protect-"] {
 
 .home-time__link a.text-decoration-none:hover .normal {
   display: none;
+}
+
+.home-time #kids .second-heading {
+  text-align: center;
+}
+
+.home-time #kids .video-kids iframe {
+  height: 315px;
+  border-radius: .7rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 1px 20px #00071cbd;
+          box-shadow: 0px 1px 20px #00071cbd;
+}
+
+@media screen and (max-width: 768px) {
+  .home-time #kids .video-kids iframe {
+    max-width: 100%;
+  }
 }
 
 .solidarity .faq-wrapper {
