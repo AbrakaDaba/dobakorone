@@ -43,12 +43,14 @@
 
 
 	"comment-info":"Sve kontakt-informacije preuzete su sa zvaničnih internet stranica Ministarstva zdravlja Republike Srbije, Instituta za javno zdravlje Srbije i www.covid19.rs.",
+	"comment-info-covid":"Sve prethodne informacije na ovoj stranici preuzete su sa zvaničnih internet stranica Ministarstva zdravlja Republike Srbije, Instituta za javno zdravlje Srbije i www.covid19.rs.",
 
 	"Chronology":"Hronologija",
 	"Chronology-1":"31. decembra 2019. godine, SZO je dobila informacije o izbijanju epidemije upale pluća nepoznatog porekla u gradu Vuhanu, u Kini.",
 	"Chronology-2":"7. januara 2020. godine Kineske vlasti su identifikovale novi koronavirus.",
 	"Chronology-3":"30. januara 2020. godine, generalni direktor SZO je proglasio ovu epidemiju za javno zdravstvenu pretnju od međunarodnog značaja (PHEIC) s obzirom na visok stepen kontagioznosti koji dovodi do eksponencijalnog povećanja broja obolelih.",
 	"Chronology-4":"11. februara virus je nazvan SARS-CoV-2, a bolest izazvana ovim virusom nazvana je Koronavirus 2019 ili COVID-19.",
+	"Chronology-5":"15. marta u Srbiji je proglašeno vanredno stanje zbog korona virusa.",
 
 
 	"question-1":"Štа znаči „nоvi коrоnаvirus”?",
@@ -171,7 +173,7 @@
 	"more-protect-item-2":"Često provetravate prostorije u kojima boravite.",
 	"more-protect-item-3":"Radite od kuće ukoliko ste u mogućnosti.",
 	"more-protect-item-4":"Radite od kuće ukoliko ste u mogućnosti.",
-	"more-protect-item-5":"Sve mere zaštite preporučene od strane Instituta za javno zdravlje Srbije ''Dr Milan Jovanović Batut'' možete pronaći na ",
+	"more-protect-item-5":"(Sve mere zaštite preporučene od strane Instituta za javno zdravlje Srbije ''Dr Milan Jovanović Batut'' možete pronaći na ",
 
 "economy-heading1":"PRIVREDA",
 "economy-heading2":"Ekonomske mere i podrška privredi",
@@ -211,8 +213,8 @@
 "regulations-2-3":"- Zabranjuje se boravak u svim parkovima i javnim povrsinama namenjenim za rekreaciju i sport.",
 "regulations-2-4":"- Zabranjuje se okupljanje više od 2 osobe.",
 "regulations-3-1":"- Deci sa autizmom i drugim smetnjama u razvoju i njihovim roditeljima biće dozvoljeno kretanje u vreme policijskog časa, svakog dana od 18 do 20 časova.",
-"regulations-source-1":"Sve prethodne informacije na ovoj strani preuzete su sa ",
-"regulations-source-2":", zvaničnog info servisa Vlade Srbije za krizne situacije povodom COVID-19.",
+"regulations-source-1":"(Sve prethodne informacije na ovoj strani preuzete su sa ",
+"regulations-source-2":", zvaničnog info servisa Vlade Srbije za krizne situacije povodom COVID-19.)",
 
 
 

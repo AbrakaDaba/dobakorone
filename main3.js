@@ -179,7 +179,7 @@ window.onload = function () {
             var totalKeys = Object.keys(resTotal);
             console.log(totalKeys);
 
-            for (i = 0; i < totalKeys.length - 3; i++) {
+            for (i = 0; i < totalKeys.length - 4; i++) {
                 if (i == 1) {
                     i = 3
                 };
@@ -197,19 +197,25 @@ window.onload = function () {
 
 
         function makingLocalTable(resLocal) {
+            console.log(resLocal);
+
             var tableLocal = document.getElementById("local-table");
             var tr1 = document.createElement("tr");
             var tr2 = document.createElement("tr");
             tableLocal.appendChild(tr1);
             tableLocal.appendChild(tr2);
-            var totalKeys = Object.keys(results);
-            console.log(totalKeys[0]);
+            var localKeys = Object.keys(resLocal);
+            console.log(localKeys[1]);
 
-            for (i = 0; i < totalKeys.length - 3; i++) {
-                if (i == 1) {
-                    i = 3
+            for (i = 0; i < localKeys.length - 3; i++) {
+                if (i == 0) {
+                    i = 1
+                }else if(i == 2){
+                    i = 4;
                 };
-                value = totalKeys[i];
+                value = localKeys[i];
+                console.log(value);
+
                 val = value.replace(/(total_)/g, ' ');
                 val = val.replace(/["_"]/g, ' ');
                 var th = document.createElement("th");
@@ -221,142 +227,61 @@ window.onload = function () {
             }
         }
 
-        ///////////////////////////////////////////////////////////
-        ////////// CORS TROUBLE SHOTING /////////////
-        ///////////////////////////////
-        //////
-
-
-        //   function createCORSRequest(method, url) {
-        //     var xhr = new XMLHttpRequest();
-        //     if ("withCredentials" in xhr) {
-
-        //       // Check if the XMLHttpRequest object has a "withCredentials" property.
-        //       // "withCredentials" only exists on XMLHTTPRequest2 objects.
-        //       xhr.open(method, url, true);
-
-        //     } else if (typeof XDomainRequest != "undefined") {
-
-        //       // Otherwise, check if XDomainRequest.
-        //       // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
-        //       xhr = new XDomainRequest();
-        //       xhr.open(method, url);
-
-        //     } else {
-
-        //       // Otherwise, CORS is not supported by the browser.
-        //       xhr = null;
-
-        //     }
-        //     return xhr;
-        //   }
-
-        //   function getTitle(text) {
-        //     return text.match('<title>(.*)?</title>')[1];
-        //     console.log(text);
-
-        //   }
-
-        //   // Make the actual CORS request.
-        //   function makeCorsRequest() {
-        //     // This is a sample server that supports CORS.
-        //     var url = 'https://thevirustracker.com/free-api?global=stats';
-
-        //     var xhr = createCORSRequest('GET', url);
-        //     if (!xhr) {
-        //       alert('CORS not supported');
-        //       return;
-        //     }
-
-        //     // Response handlers.
-        //     xhr.onload = function() {
-        //       var text = xhr.responseText;
-        //       console.log(text);
-
-        //       var title = getTitle(text);
-        //       alert('Response from CORS request to ' + url + ': ' + title);
-        //     };
-
-        //     xhr.onerror = function() {
-        //       alert('Woops, there was an error making the request.');
-        //     };
-
-        //     xhr.send();
-        //   }
-
-        //   makeCorsRequest()
-
-        ///////
-        //////////////////////////
-        ///////////////////////////////////////////
-        ////////////////////////////////////////////////////////////
-        function getAjaxPriv() {
+        // function getAjaxPriv() {
 
             let totalAjax = $.ajax({
-                type: 'GET',
-                url: 'https://thevirustracker.com/free-api?global=stats',
-                contentType: 'text/plain',
+                // type: 'GET',
+                // url: 'https://thevirustracker.com/free-api?global=stats',
+                url: './data/total.json',
+                // contentType: 'text/plain',
                 // dataType: 'json',
                 xhrFields: {
-                    // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
-                    // This can be used to set the 'withCredentials' property.
-                    // Set the value to 'true' if you'd like to pass cookies to the server.
-                    // If this is enabled, your server must respond with the header
-                    // 'Access-Control-Allow-Credentials: true'.
-                    withCredentials: false
-                },
-                headers: {
-                    // Set any custom headers here.
-                    // If you set any non-simple headers, your server must include these
-                    // headers in the 'Access-Control-Allow-Headers' response header.
+                    // withCredentials: false
                 },
                 success: function (data) {
                     console.log(data.results[0]);
-                    results = data.results[0];
-                    console.log(results);
-                    makingTotalTable(results);
+                    resTotal = data.results[0];
+                    console.log(resTotal);
+                    makingTotalTable(resTotal);
                 },
                 error: function () {
-                    // Here's where you handle an error response.
-                    // Note that if the error was due to a CORS issue,
-                    // this function will still fire, but there won't be any additional
-                    // information about the error.
                 }
             })
 
-        }
-        // $.when(getLocation).then(getData);
+        // }
+
 
         let localAjax = $.ajax({
-            url: 'https://thevirustracker.com/free-api?countryTotal=RS',
-            // dataType: 'json',
+            // url: 'https://thevirustracker.com/free-api?countryTotal=RS',
+            url: './data/total-rs.json',
+            dataType: 'json',
             success: function (res) {
-                res = res.countrydata[0];
-                console.log(res);
-                makingLocalTable(res);
+                resLocal = res.countrydata[0];
+                console.log(resLocal.info);
+                makingLocalTable(resLocal);
             }
         });
 
         function getLocation() {
-            console.log('buljaa');
+            console.log('hm');
 
-            $.ajax({
-                url: 'https://ipinfo.io/178.148.88.3/json?token=6a2a0f17aafb13',
-                dataType: 'json',
-                success: function (resLocation) {
-                    console.log(resLocation.country);
-                    makingLocalTable(res);
-                }
-            });
+            // $.ajax({
+            //     url: 'https://ipinfo.io/178.148.88.3/json?token=6a2a0f17aafb13',
+            //     dataType: 'json',
+            //     success: function (resLocation) {
+            //         console.log(resLocation.country);
+            //         makingLocalTable(res);
+            //     }
+            // });
         }
 
         function getData() {
-            $.when(totalAjax).then(localAjax);
-            $.when(totalAjax).then(console.log("oujea"));
+            // $.when(totalAjax).then(localAjax);
+            // $.when(localAjax).then(console.log("local-done!"));
         }
+        // $.when(getLocation).then(getData);
 
 
-        // SCROLL UP BUTTON
         // LETTERS - LATIN - Start position
         var letters = "lat";
         var logo = "./assets/img/logo10wl.png";
@@ -375,17 +300,11 @@ window.onload = function () {
 
         })
 
+
+        // HEADER BEHAVIOUR DURING SCROLL
         function scrollHeader() {
 
             $(window).scroll(function () {
-                // if(letters == "cyr"){
-                //     logo = "./assets/img/logo10w.png";
-                // }else if(letters == "lat"){
-                //     logo = "./assets/img/logo10wl.png";
-                // }else{
-                //     logo = "./assets/img/logo10wl.png";
-                // }
-
 
                 console.log(letters);
                 if (letters == "cyr") {
@@ -434,11 +353,7 @@ window.onload = function () {
             $(window).scrollTop(0)
         }
 
-
-
         // SETTINGS FUNCTIONS //
-
-
         // checkSections //
         function checkSections() {
             const checks = Array.prototype.slice.call(document.querySelectorAll('.check'));

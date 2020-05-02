@@ -66,15 +66,10 @@
     display: none !important;
 }
 
-
-.important-text {
-    text-align: center;
-    color: $dark3;
-    font-size: 2.5rem;
-    padding: 5rem 2rem;
+.start-content__block{
     position: relative;
-
-    &:after {
+    padding: 5rem 2rem;
+     &:after {
         content: "";
         position: absolute;
         height: 1px;
@@ -85,6 +80,15 @@
         left: 50%;
         transform: translate(-50%);
     }
+}
+
+.important-text {
+    text-align: center;
+    color: $dark3;
+    font-size: 2.5rem;
+    position: relative;
+
+
 }
 
 .divider {

@@ -1,0 +1,19 @@
+{
+    "countrydata":[
+       {
+          "info":{
+             "ourid":136,
+             "title":"Serbia",
+             "code":"RS",
+             "source":"https://thevirustracker.com/serbia-coronavirus-information-rs"
+          },
+          "total_cases":9362,
+          "total_recovered":1426,
+          "total_unresolved":0,
+          "total_deaths":189,
+          "total_new_cases_today":157,
+          "total_new_deaths_today":4,
+          "total_active_cases":7747,
+          "total_serious_cases":57,
+          "total_danger_rank":38}],
+                 "stat":"ok"}
