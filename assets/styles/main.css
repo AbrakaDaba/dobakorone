@@ -593,7 +593,8 @@ body * {
     border-left: 1px solid #e3ffb5;
   }
   #table-wrapper table tr td {
-    padding-left: 1rem;
+    padding-left: .5rem;
+    font-size: 2rem;
   }
 }
 
