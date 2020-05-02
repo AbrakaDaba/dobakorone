@@ -99,16 +99,25 @@
         }
     }
 
+    #adult {
+        .second-heading {
+            text-align: right;
+        }
+    }
+
     #kids {
         .second-heading {
             text-align: center;
         }
 
-        .video-kids iframe {
-            height: 315px;
+        .video-responsive iframe {
+            box-shadow: 0px 1px 20px #00071cbd;
             border-radius: .7rem;
             overflow: hidden;
-            box-shadow: 0px 1px 20px #00071cbd;
+        }
+
+        .video-kids iframe {
+            // height: 315px;
         }
     }
 }
@@ -116,9 +125,24 @@
 @media screen and (max-width: 768px) {
     .home-time {
         #kids {
-            .video-kids iframe {
-                max-width: 100%; 
+            .video-responsive {
+                overflow: hidden;
+                padding-bottom: 49.25%;
+                position: relative;
+                height: 0;
+                max-width: calc(100% - 31px);
+                margin: 0 auto;
+            }
 
+            .video-responsive iframe {
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                box-shadow: 0px 1px 20px #00071cbd;
+                border-radius: .7rem;
+                overflow: hidden;
             }
         }
     }

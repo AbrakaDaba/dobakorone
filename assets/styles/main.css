@@ -1689,21 +1689,40 @@ div[class^="protect-"] {
   display: none;
 }
 
+.home-time #adult .second-heading {
+  text-align: right;
+}
+
 .home-time #kids .second-heading {
   text-align: center;
 }
 
-.home-time #kids .video-kids iframe {
-  height: 315px;
-  border-radius: .7rem;
-  overflow: hidden;
+.home-time #kids .video-responsive iframe {
   -webkit-box-shadow: 0px 1px 20px #00071cbd;
           box-shadow: 0px 1px 20px #00071cbd;
+  border-radius: .7rem;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
-  .home-time #kids .video-kids iframe {
-    max-width: 100%;
+  .home-time #kids .video-responsive {
+    overflow: hidden;
+    padding-bottom: 49.25%;
+    position: relative;
+    height: 0;
+    max-width: calc(100% - 31px);
+    margin: 0 auto;
+  }
+  .home-time #kids .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-box-shadow: 0px 1px 20px #00071cbd;
+            box-shadow: 0px 1px 20px #00071cbd;
+    border-radius: .7rem;
+    overflow: hidden;
   }
 }
 
